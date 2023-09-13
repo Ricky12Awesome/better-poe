@@ -16,8 +16,8 @@
   })();
 </script>
 
-<div style="overflow-y: unset; height: 80vh">
-  <code>
+<div style="">
+  <code class="text-9xl">
     {#each list as element}
       {element}<br>
     {/each}
