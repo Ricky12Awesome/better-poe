@@ -21,6 +21,7 @@ anyhow = "1.0"
 filesize = "0.2.0"
 chrono = "0.4.30"
 thiserror = "1.0.48"
+oauth2 = "4.4.2"
 
 [features]
 # this feature is used for production builds or when `devPath` points to the filesystem
