@@ -8,6 +8,12 @@ pub enum Error {
   #[error(transparent)]
   Io(#[from] std::io::Error),
   #[error(transparent)]
+  Infallible(#[from] std::convert::Infallible),
+  #[error(transparent)]
+  ParseError(#[from] oauth2::url::ParseError),
+  #[error("Failed to get token")]
+  TokenError,
+  #[error(transparent)]
   Any(#[from] anyhow::Error),
 }
 
