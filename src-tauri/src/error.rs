@@ -11,8 +11,8 @@ pub enum Error {
   Infallible(#[from] std::convert::Infallible),
   #[error(transparent)]
   ParseError(#[from] oauth2::url::ParseError),
-  #[error("Failed to get token")]
-  TokenError,
+  #[error("Failed to get authorization code")]
+  FailedToGetAuthorizationCode,
   #[error(transparent)]
   Any(#[from] anyhow::Error),
 }

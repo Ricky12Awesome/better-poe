@@ -1,3 +1,6 @@
+use std::thread::sleep;
+use std::time::{Duration, Instant};
+
 use oauth2::basic::{BasicClient, BasicTokenResponse};
 use oauth2::{
   AuthUrl, AuthorizationCode, ClientId, CsrfToken, PkceCodeChallenge, RedirectUrl, Scope, TokenUrl,
@@ -36,34 +39,55 @@ pub const USER_AGENT: &str = const_format::concatcp!(
 pub fn get_authorization_code(state: CsrfToken) -> Result<String> {
   let server = tiny_http::Server::http("127.0.0.1:8088").unwrap();
 
-  for request in server.incoming_requests() {
-    let url = format!("http://{}{}", server.server_addr(), request.url());
-    let url = oauth2::url::Url::parse(&url)?;
-    let query = url.query_pairs().collect::<Vec<_>>();
+  std::thread::scope(|s| {
+    let thread = s.spawn(|| -> Result<String> {
+      for request in server.incoming_requests() {
+        let url = format!("{}{}", REDIRECT_URL, request.url());
+        let url = Url::parse(&url)?;
+        let query = url.query_pairs().collect::<Vec<_>>();
 
-    let query_state = query
-      .iter()
-      .find(|(key, _)| key == "state")
-      .map(|(_, value)| value);
+        let query_state = query
+          .iter()
+          .find(|(key, _)| key == "state")
+          .map(|(_, value)| value);
 
-    let query_code = query
-      .iter()
-      .find(|(key, _)| key == "code")
-      .map(|(_, value)| value);
+        let query_code = query
+          .iter()
+          .find(|(key, _)| key == "code")
+          .map(|(_, value)| value);
 
-    match (query_state, query_code) {
-      (Some(query_state), Some(query_code)) if state.secret() == query_state => {
-        request.respond(tiny_http::Response::from_data(AUTO_CLOSE_HTML))?;
+        match (query_state, query_code) {
+          (Some(query_state), Some(query_code)) if state.secret() == query_state => {
+            request.respond(tiny_http::Response::from_data(AUTO_CLOSE_HTML))?;
 
-        return Ok(query_code.to_string());
+            return Ok(query_code.to_string());
+          }
+          _ => {
+            request
+              .respond(tiny_http::Response::from_string("Invalid Query").with_status_code(422))?;
+          }
+        }
       }
-      _ => {
-        request.respond(tiny_http::Response::from_string("Invalid Query").with_status_code(422))?;
+
+      Err(Error::FailedToGetAuthorizationCode)
+    });
+
+    let start = Instant::now();
+
+    while start.elapsed() <= Duration::from_secs(28) {
+      if thread.is_finished() {
+        return thread
+          .join()
+          .map_err(|_| Error::FailedToGetAuthorizationCode)?;
       }
+
+      sleep(Duration::from_millis(100))
     }
-  }
 
-  Ok(String::new())
+    server.unblock();
+
+    Err(Error::FailedToGetAuthorizationCode)
+  })
 }
 
 pub fn get_token(callback: impl FnOnce(Url)) -> Result<BasicTokenResponse> {
@@ -96,5 +120,5 @@ pub fn get_token(callback: impl FnOnce(Url)) -> Result<BasicTokenResponse> {
     .exchange_code(AuthorizationCode::new(authorization_code))
     .set_pkce_verifier(pkce_verifier)
     .request(oauth2::reqwest::http_client)
-    .map_err(|_| Error::TokenError)
+    .map_err(|_| Error::FailedToGetAuthorizationCode)
 }
