@@ -1,6 +1,10 @@
 <script lang="ts">
   import Settings from "./views/Settings.svelte";
   import Stashes from "./views/Stashes.svelte";
+  import { colors } from "./lib/GeneratedColors";
+  import { applyTheme, defaultTheme, type Theme } from "./lib/Theme";
+
+  applyTheme(defaultTheme);
 
   const options = [
     {
@@ -12,36 +16,58 @@
       component: Stashes,
     },
   ];
+  const themes: Theme[] = [
+    defaultTheme,
+    {
+      name: "Blue",
+      colors: {
+        foreground: colors.foreground.neutral[50],
+        background: colors.background.slate["900"],
+        primary: colors.primary.blue,
+        secondary: colors.secondary.blue,
+        text: colors.text.blue,
+      },
+    },
+    {
+      name: "Red",
+      colors: {
+        foreground: colors.foreground.neutral[50],
+        background: colors.background.red["950"],
+        primary: colors.primary.red,
+        secondary: colors.secondary.red,
+        text: colors.text.red,
+      },
+    },
+  ];
 
-  let color = "purple";
-  let selected = options[0];
-  let selectedId = 0;
+  let selectedView = options[0];
+  let selectedViewId = 0;
 
   function select(event: any) {
-    selected = options[event.target.id];
-    selectedId = Number.parseInt(event.target.id);
-  }
-
-  function setColor(newColor: string) {
-    color = newColor;
+    selectedView = options[event.target.id];
+    selectedViewId = Number.parseInt(event.target.id);
   }
 </script>
 
-<main class={color}>
+<main>
   <div class="flex flex-grow">
     <ul class="flex flex-grow">
       {#each options as option, i}
         <li>
-          {#if selectedId === i}
+          {#if selectedViewId === i}
             <button
               id={i.toString()}
               on:click={select}
-              class="bg-primary-700 hover:bg-primary-700 text-text-100 hover:text-text-200 px-8 py-3 text-center text-4xl"
+              class="bg-primary-700 px-8 py-3 text-center text-4xl text-text-100 hover:bg-primary-700 hover:text-text-200"
             >
               {option.name}
             </button>
           {:else}
-            <button id={i.toString()} on:click={select} class="hover:bg-primary-700 hover:text-text-200 text-text-100 px-8 py-3 text-center text-4xl">
+            <button
+              id={i.toString()}
+              on:click={select}
+              class="px-8 py-3 text-center text-4xl text-text-100 hover:bg-primary-700 hover:text-text-200"
+            >
               {option.name}
             </button>
           {/if}
@@ -50,7 +76,7 @@
     </ul>
   </div>
 
-  <svelte:component this={selected.component} {setColor} />
+  <svelte:component this={selectedView.component} {themes} />
 </main>
 
 <style>
