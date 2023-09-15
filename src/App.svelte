@@ -1,21 +1,56 @@
 <script lang="ts">
-  import Greet from "./lib/Greet.svelte";
-  import Navbar from "./lib/Navbar.svelte";
+  import Settings from "./views/Settings.svelte";
+  import Stashes from "./views/Stashes.svelte";
+
+  const options = [
+    {
+      name: "Settings",
+      component: Settings,
+    },
+    {
+      name: "Stashes",
+      component: Stashes,
+    },
+  ];
+
+  let color = "purple";
+  let selected = options[0];
+  let selectedId = 0;
+
+  function select(event: any) {
+    selected = options[event.target.id];
+    selectedId = Number.parseInt(event.target.id);
+  }
+
+  function setColor(newColor: string) {
+    color = newColor;
+  }
 </script>
 
-<main>
+<main class={color}>
   <div class="flex flex-grow">
-    <Navbar />
+    <ul class="flex flex-grow">
+      {#each options as option, i}
+        <li>
+          {#if selectedId === i}
+            <button
+              id={i.toString()}
+              on:click={select}
+              class="bg-primary-700 hover:bg-primary-700 text-text-100 hover:text-text-200 px-8 py-3 text-center text-4xl"
+            >
+              {option.name}
+            </button>
+          {:else}
+            <button id={i.toString()} on:click={select} class="hover:bg-primary-700 hover:text-text-200 text-text-100 px-8 py-3 text-center text-4xl">
+              {option.name}
+            </button>
+          {/if}
+        </li>
+      {/each}
+    </ul>
   </div>
 
-  <div>
-    <Greet />
-    <button
-      class="hover:text-violet-400 hover:border-violet-400 h-14 px-6 text-3xl font-semibold border border-violet-600 rounded-md bg-slate-950 text-violet-500"
-    >
-      Test
-    </button>
-  </div>
+  <svelte:component this={selected.component} {setColor} />
 </main>
 
 <style>

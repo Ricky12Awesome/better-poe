@@ -3,12 +3,11 @@
     "prettier-plugin-svelte",
     "prettier-plugin-tailwindcss"
   ],
-  "tabWidth": 120,
   "overrides": [
     {
       "files": "*.svelte",
       "options": {
-        "printWidth": 200
+        "printWidth": 160
       }
     }
   ]

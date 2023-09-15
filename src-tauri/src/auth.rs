@@ -74,7 +74,7 @@ pub fn get_authorization_code(state: CsrfToken) -> Result<String> {
 
     let start = Instant::now();
 
-    while start.elapsed() <= Duration::from_secs(28) {
+    while start.elapsed() <= Duration::from_secs(5 * 60) {
       if thread.is_finished() {
         return thread
           .join()
