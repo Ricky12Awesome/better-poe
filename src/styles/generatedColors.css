@@ -3658,3 +3658,735 @@
 .text-rose-950 {
   --text: 76 5 25;
 }
+.text2-black {
+  --text2: 0 0 0;
+}
+.text2-white {
+  --text2: 255 255 255;
+}
+.text2-slate-50 {
+  --text2: 248 250 252;
+}
+.text2-slate-100 {
+  --text2: 241 245 249;
+}
+.text2-slate-200 {
+  --text2: 226 232 240;
+}
+.text2-slate-300 {
+  --text2: 203 213 225;
+}
+.text2-slate-400 {
+  --text2: 148 163 184;
+}
+.text2-slate-500 {
+  --text2: 100 116 139;
+}
+.text2-slate-600 {
+  --text2: 71 85 105;
+}
+.text2-slate-700 {
+  --text2: 51 65 85;
+}
+.text2-slate-800 {
+  --text2: 30 41 59;
+}
+.text2-slate-900 {
+  --text2: 15 23 42;
+}
+.text2-slate-950 {
+  --text2: 2 6 23;
+}
+.text2-gray-50 {
+  --text2: 249 250 251;
+}
+.text2-gray-100 {
+  --text2: 243 244 246;
+}
+.text2-gray-200 {
+  --text2: 229 231 235;
+}
+.text2-gray-300 {
+  --text2: 209 213 219;
+}
+.text2-gray-400 {
+  --text2: 156 163 175;
+}
+.text2-gray-500 {
+  --text2: 107 114 128;
+}
+.text2-gray-600 {
+  --text2: 75 85 99;
+}
+.text2-gray-700 {
+  --text2: 55 65 81;
+}
+.text2-gray-800 {
+  --text2: 31 41 55;
+}
+.text2-gray-900 {
+  --text2: 17 24 39;
+}
+.text2-gray-950 {
+  --text2: 3 7 18;
+}
+.text2-zinc-50 {
+  --text2: 250 250 250;
+}
+.text2-zinc-100 {
+  --text2: 244 244 245;
+}
+.text2-zinc-200 {
+  --text2: 228 228 231;
+}
+.text2-zinc-300 {
+  --text2: 212 212 216;
+}
+.text2-zinc-400 {
+  --text2: 161 161 170;
+}
+.text2-zinc-500 {
+  --text2: 113 113 122;
+}
+.text2-zinc-600 {
+  --text2: 82 82 91;
+}
+.text2-zinc-700 {
+  --text2: 63 63 70;
+}
+.text2-zinc-800 {
+  --text2: 39 39 42;
+}
+.text2-zinc-900 {
+  --text2: 24 24 27;
+}
+.text2-zinc-950 {
+  --text2: 9 9 11;
+}
+.text2-neutral-50 {
+  --text2: 250 250 250;
+}
+.text2-neutral-100 {
+  --text2: 245 245 245;
+}
+.text2-neutral-200 {
+  --text2: 229 229 229;
+}
+.text2-neutral-300 {
+  --text2: 212 212 212;
+}
+.text2-neutral-400 {
+  --text2: 163 163 163;
+}
+.text2-neutral-500 {
+  --text2: 115 115 115;
+}
+.text2-neutral-600 {
+  --text2: 82 82 82;
+}
+.text2-neutral-700 {
+  --text2: 64 64 64;
+}
+.text2-neutral-800 {
+  --text2: 38 38 38;
+}
+.text2-neutral-900 {
+  --text2: 23 23 23;
+}
+.text2-neutral-950 {
+  --text2: 10 10 10;
+}
+.text2-stone-50 {
+  --text2: 250 250 249;
+}
+.text2-stone-100 {
+  --text2: 245 245 244;
+}
+.text2-stone-200 {
+  --text2: 231 229 228;
+}
+.text2-stone-300 {
+  --text2: 214 211 209;
+}
+.text2-stone-400 {
+  --text2: 168 162 158;
+}
+.text2-stone-500 {
+  --text2: 120 113 108;
+}
+.text2-stone-600 {
+  --text2: 87 83 78;
+}
+.text2-stone-700 {
+  --text2: 68 64 60;
+}
+.text2-stone-800 {
+  --text2: 41 37 36;
+}
+.text2-stone-900 {
+  --text2: 28 25 23;
+}
+.text2-stone-950 {
+  --text2: 12 10 9;
+}
+.text2-red-50 {
+  --text2: 254 242 242;
+}
+.text2-red-100 {
+  --text2: 254 226 226;
+}
+.text2-red-200 {
+  --text2: 254 202 202;
+}
+.text2-red-300 {
+  --text2: 252 165 165;
+}
+.text2-red-400 {
+  --text2: 248 113 113;
+}
+.text2-red-500 {
+  --text2: 239 68 68;
+}
+.text2-red-600 {
+  --text2: 220 38 38;
+}
+.text2-red-700 {
+  --text2: 185 28 28;
+}
+.text2-red-800 {
+  --text2: 153 27 27;
+}
+.text2-red-900 {
+  --text2: 127 29 29;
+}
+.text2-red-950 {
+  --text2: 69 10 10;
+}
+.text2-orange-50 {
+  --text2: 255 247 237;
+}
+.text2-orange-100 {
+  --text2: 255 237 213;
+}
+.text2-orange-200 {
+  --text2: 254 215 170;
+}
+.text2-orange-300 {
+  --text2: 253 186 116;
+}
+.text2-orange-400 {
+  --text2: 251 146 60;
+}
+.text2-orange-500 {
+  --text2: 249 115 22;
+}
+.text2-orange-600 {
+  --text2: 234 88 12;
+}
+.text2-orange-700 {
+  --text2: 194 65 12;
+}
+.text2-orange-800 {
+  --text2: 154 52 18;
+}
+.text2-orange-900 {
+  --text2: 124 45 18;
+}
+.text2-orange-950 {
+  --text2: 67 20 7;
+}
+.text2-amber-50 {
+  --text2: 255 251 235;
+}
+.text2-amber-100 {
+  --text2: 254 243 199;
+}
+.text2-amber-200 {
+  --text2: 253 230 138;
+}
+.text2-amber-300 {
+  --text2: 252 211 77;
+}
+.text2-amber-400 {
+  --text2: 251 191 36;
+}
+.text2-amber-500 {
+  --text2: 245 158 11;
+}
+.text2-amber-600 {
+  --text2: 217 119 6;
+}
+.text2-amber-700 {
+  --text2: 180 83 9;
+}
+.text2-amber-800 {
+  --text2: 146 64 14;
+}
+.text2-amber-900 {
+  --text2: 120 53 15;
+}
+.text2-amber-950 {
+  --text2: 69 26 3;
+}
+.text2-yellow-50 {
+  --text2: 254 252 232;
+}
+.text2-yellow-100 {
+  --text2: 254 249 195;
+}
+.text2-yellow-200 {
+  --text2: 254 240 138;
+}
+.text2-yellow-300 {
+  --text2: 253 224 71;
+}
+.text2-yellow-400 {
+  --text2: 250 204 21;
+}
+.text2-yellow-500 {
+  --text2: 234 179 8;
+}
+.text2-yellow-600 {
+  --text2: 202 138 4;
+}
+.text2-yellow-700 {
+  --text2: 161 98 7;
+}
+.text2-yellow-800 {
+  --text2: 133 77 14;
+}
+.text2-yellow-900 {
+  --text2: 113 63 18;
+}
+.text2-yellow-950 {
+  --text2: 66 32 6;
+}
+.text2-lime-50 {
+  --text2: 247 254 231;
+}
+.text2-lime-100 {
+  --text2: 236 252 203;
+}
+.text2-lime-200 {
+  --text2: 217 249 157;
+}
+.text2-lime-300 {
+  --text2: 190 242 100;
+}
+.text2-lime-400 {
+  --text2: 163 230 53;
+}
+.text2-lime-500 {
+  --text2: 132 204 22;
+}
+.text2-lime-600 {
+  --text2: 101 163 13;
+}
+.text2-lime-700 {
+  --text2: 77 124 15;
+}
+.text2-lime-800 {
+  --text2: 63 98 18;
+}
+.text2-lime-900 {
+  --text2: 54 83 20;
+}
+.text2-lime-950 {
+  --text2: 26 46 5;
+}
+.text2-green-50 {
+  --text2: 240 253 244;
+}
+.text2-green-100 {
+  --text2: 220 252 231;
+}
+.text2-green-200 {
+  --text2: 187 247 208;
+}
+.text2-green-300 {
+  --text2: 134 239 172;
+}
+.text2-green-400 {
+  --text2: 74 222 128;
+}
+.text2-green-500 {
+  --text2: 34 197 94;
+}
+.text2-green-600 {
+  --text2: 22 163 74;
+}
+.text2-green-700 {
+  --text2: 21 128 61;
+}
+.text2-green-800 {
+  --text2: 22 101 52;
+}
+.text2-green-900 {
+  --text2: 20 83 45;
+}
+.text2-green-950 {
+  --text2: 5 46 22;
+}
+.text2-emerald-50 {
+  --text2: 236 253 245;
+}
+.text2-emerald-100 {
+  --text2: 209 250 229;
+}
+.text2-emerald-200 {
+  --text2: 167 243 208;
+}
+.text2-emerald-300 {
+  --text2: 110 231 183;
+}
+.text2-emerald-400 {
+  --text2: 52 211 153;
+}
+.text2-emerald-500 {
+  --text2: 16 185 129;
+}
+.text2-emerald-600 {
+  --text2: 5 150 105;
+}
+.text2-emerald-700 {
+  --text2: 4 120 87;
+}
+.text2-emerald-800 {
+  --text2: 6 95 70;
+}
+.text2-emerald-900 {
+  --text2: 6 78 59;
+}
+.text2-emerald-950 {
+  --text2: 2 44 34;
+}
+.text2-teal-50 {
+  --text2: 240 253 250;
+}
+.text2-teal-100 {
+  --text2: 204 251 241;
+}
+.text2-teal-200 {
+  --text2: 153 246 228;
+}
+.text2-teal-300 {
+  --text2: 94 234 212;
+}
+.text2-teal-400 {
+  --text2: 45 212 191;
+}
+.text2-teal-500 {
+  --text2: 20 184 166;
+}
+.text2-teal-600 {
+  --text2: 13 148 136;
+}
+.text2-teal-700 {
+  --text2: 15 118 110;
+}
+.text2-teal-800 {
+  --text2: 17 94 89;
+}
+.text2-teal-900 {
+  --text2: 19 78 74;
+}
+.text2-teal-950 {
+  --text2: 4 47 46;
+}
+.text2-cyan-50 {
+  --text2: 236 254 255;
+}
+.text2-cyan-100 {
+  --text2: 207 250 254;
+}
+.text2-cyan-200 {
+  --text2: 165 243 252;
+}
+.text2-cyan-300 {
+  --text2: 103 232 249;
+}
+.text2-cyan-400 {
+  --text2: 34 211 238;
+}
+.text2-cyan-500 {
+  --text2: 6 182 212;
+}
+.text2-cyan-600 {
+  --text2: 8 145 178;
+}
+.text2-cyan-700 {
+  --text2: 14 116 144;
+}
+.text2-cyan-800 {
+  --text2: 21 94 117;
+}
+.text2-cyan-900 {
+  --text2: 22 78 99;
+}
+.text2-cyan-950 {
+  --text2: 8 51 68;
+}
+.text2-sky-50 {
+  --text2: 240 249 255;
+}
+.text2-sky-100 {
+  --text2: 224 242 254;
+}
+.text2-sky-200 {
+  --text2: 186 230 253;
+}
+.text2-sky-300 {
+  --text2: 125 211 252;
+}
+.text2-sky-400 {
+  --text2: 56 189 248;
+}
+.text2-sky-500 {
+  --text2: 14 165 233;
+}
+.text2-sky-600 {
+  --text2: 2 132 199;
+}
+.text2-sky-700 {
+  --text2: 3 105 161;
+}
+.text2-sky-800 {
+  --text2: 7 89 133;
+}
+.text2-sky-900 {
+  --text2: 12 74 110;
+}
+.text2-sky-950 {
+  --text2: 8 47 73;
+}
+.text2-blue-50 {
+  --text2: 239 246 255;
+}
+.text2-blue-100 {
+  --text2: 219 234 254;
+}
+.text2-blue-200 {
+  --text2: 191 219 254;
+}
+.text2-blue-300 {
+  --text2: 147 197 253;
+}
+.text2-blue-400 {
+  --text2: 96 165 250;
+}
+.text2-blue-500 {
+  --text2: 59 130 246;
+}
+.text2-blue-600 {
+  --text2: 37 99 235;
+}
+.text2-blue-700 {
+  --text2: 29 78 216;
+}
+.text2-blue-800 {
+  --text2: 30 64 175;
+}
+.text2-blue-900 {
+  --text2: 30 58 138;
+}
+.text2-blue-950 {
+  --text2: 23 37 84;
+}
+.text2-indigo-50 {
+  --text2: 238 242 255;
+}
+.text2-indigo-100 {
+  --text2: 224 231 255;
+}
+.text2-indigo-200 {
+  --text2: 199 210 254;
+}
+.text2-indigo-300 {
+  --text2: 165 180 252;
+}
+.text2-indigo-400 {
+  --text2: 129 140 248;
+}
+.text2-indigo-500 {
+  --text2: 99 102 241;
+}
+.text2-indigo-600 {
+  --text2: 79 70 229;
+}
+.text2-indigo-700 {
+  --text2: 67 56 202;
+}
+.text2-indigo-800 {
+  --text2: 55 48 163;
+}
+.text2-indigo-900 {
+  --text2: 49 46 129;
+}
+.text2-indigo-950 {
+  --text2: 30 27 75;
+}
+.text2-violet-50 {
+  --text2: 245 243 255;
+}
+.text2-violet-100 {
+  --text2: 237 233 254;
+}
+.text2-violet-200 {
+  --text2: 221 214 254;
+}
+.text2-violet-300 {
+  --text2: 196 181 253;
+}
+.text2-violet-400 {
+  --text2: 167 139 250;
+}
+.text2-violet-500 {
+  --text2: 139 92 246;
+}
+.text2-violet-600 {
+  --text2: 124 58 237;
+}
+.text2-violet-700 {
+  --text2: 109 40 217;
+}
+.text2-violet-800 {
+  --text2: 91 33 182;
+}
+.text2-violet-900 {
+  --text2: 76 29 149;
+}
+.text2-violet-950 {
+  --text2: 46 16 101;
+}
+.text2-purple-50 {
+  --text2: 250 245 255;
+}
+.text2-purple-100 {
+  --text2: 243 232 255;
+}
+.text2-purple-200 {
+  --text2: 233 213 255;
+}
+.text2-purple-300 {
+  --text2: 216 180 254;
+}
+.text2-purple-400 {
+  --text2: 192 132 252;
+}
+.text2-purple-500 {
+  --text2: 168 85 247;
+}
+.text2-purple-600 {
+  --text2: 147 51 234;
+}
+.text2-purple-700 {
+  --text2: 126 34 206;
+}
+.text2-purple-800 {
+  --text2: 107 33 168;
+}
+.text2-purple-900 {
+  --text2: 88 28 135;
+}
+.text2-purple-950 {
+  --text2: 59 7 100;
+}
+.text2-fuchsia-50 {
+  --text2: 253 244 255;
+}
+.text2-fuchsia-100 {
+  --text2: 250 232 255;
+}
+.text2-fuchsia-200 {
+  --text2: 245 208 254;
+}
+.text2-fuchsia-300 {
+  --text2: 240 171 252;
+}
+.text2-fuchsia-400 {
+  --text2: 232 121 249;
+}
+.text2-fuchsia-500 {
+  --text2: 217 70 239;
+}
+.text2-fuchsia-600 {
+  --text2: 192 38 211;
+}
+.text2-fuchsia-700 {
+  --text2: 162 28 175;
+}
+.text2-fuchsia-800 {
+  --text2: 134 25 143;
+}
+.text2-fuchsia-900 {
+  --text2: 112 26 117;
+}
+.text2-fuchsia-950 {
+  --text2: 74 4 78;
+}
+.text2-pink-50 {
+  --text2: 253 242 248;
+}
+.text2-pink-100 {
+  --text2: 252 231 243;
+}
+.text2-pink-200 {
+  --text2: 251 207 232;
+}
+.text2-pink-300 {
+  --text2: 249 168 212;
+}
+.text2-pink-400 {
+  --text2: 244 114 182;
+}
+.text2-pink-500 {
+  --text2: 236 72 153;
+}
+.text2-pink-600 {
+  --text2: 219 39 119;
+}
+.text2-pink-700 {
+  --text2: 190 24 93;
+}
+.text2-pink-800 {
+  --text2: 157 23 77;
+}
+.text2-pink-900 {
+  --text2: 131 24 67;
+}
+.text2-pink-950 {
+  --text2: 80 7 36;
+}
+.text2-rose-50 {
+  --text2: 255 241 242;
+}
+.text2-rose-100 {
+  --text2: 255 228 230;
+}
+.text2-rose-200 {
+  --text2: 254 205 211;
+}
+.text2-rose-300 {
+  --text2: 253 164 175;
+}
+.text2-rose-400 {
+  --text2: 251 113 133;
+}
+.text2-rose-500 {
+  --text2: 244 63 94;
+}
+.text2-rose-600 {
+  --text2: 225 29 72;
+}
+.text2-rose-700 {
+  --text2: 190 18 60;
+}
+.text2-rose-800 {
+  --text2: 159 18 57;
+}
+.text2-rose-900 {
+  --text2: 136 19 55;
+}
+.text2-rose-950 {
+  --text2: 76 5 25;
+}

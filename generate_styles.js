@@ -14,7 +14,14 @@ const blacklist = [
   "transparent",
 ];
 
-const colorsOne = ["primary", "secondary", "background", "foreground", "text"];
+const colorsOne = [
+  "primary",
+  "secondary",
+  "background",
+  "foreground",
+  "text",
+  "text2",
+];
 
 /** @type function(string) => string */
 const hexToRgb = (value) => {

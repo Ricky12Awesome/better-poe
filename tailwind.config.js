@@ -11,6 +11,7 @@ export default {
         background: "rgb(var(--background) / <alpha-value>)",
         foreground: "rgb(var(--foreground) / <alpha-value>)",
         text: "rgb(var(--text) / <alpha-value>)",
+        text2: "rgb(var(--text2) / <alpha-value>)",
       },
     },
   },
