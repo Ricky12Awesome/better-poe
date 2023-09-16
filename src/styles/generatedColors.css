@@ -1,3 +1,1467 @@
+.primary-black {
+  --primary: 0 0 0;
+}
+.primary-white {
+  --primary: 255 255 255;
+}
+.primary-slate-50 {
+  --primary: 248 250 252;
+}
+.primary-slate-100 {
+  --primary: 241 245 249;
+}
+.primary-slate-200 {
+  --primary: 226 232 240;
+}
+.primary-slate-300 {
+  --primary: 203 213 225;
+}
+.primary-slate-400 {
+  --primary: 148 163 184;
+}
+.primary-slate-500 {
+  --primary: 100 116 139;
+}
+.primary-slate-600 {
+  --primary: 71 85 105;
+}
+.primary-slate-700 {
+  --primary: 51 65 85;
+}
+.primary-slate-800 {
+  --primary: 30 41 59;
+}
+.primary-slate-900 {
+  --primary: 15 23 42;
+}
+.primary-slate-950 {
+  --primary: 2 6 23;
+}
+.primary-gray-50 {
+  --primary: 249 250 251;
+}
+.primary-gray-100 {
+  --primary: 243 244 246;
+}
+.primary-gray-200 {
+  --primary: 229 231 235;
+}
+.primary-gray-300 {
+  --primary: 209 213 219;
+}
+.primary-gray-400 {
+  --primary: 156 163 175;
+}
+.primary-gray-500 {
+  --primary: 107 114 128;
+}
+.primary-gray-600 {
+  --primary: 75 85 99;
+}
+.primary-gray-700 {
+  --primary: 55 65 81;
+}
+.primary-gray-800 {
+  --primary: 31 41 55;
+}
+.primary-gray-900 {
+  --primary: 17 24 39;
+}
+.primary-gray-950 {
+  --primary: 3 7 18;
+}
+.primary-zinc-50 {
+  --primary: 250 250 250;
+}
+.primary-zinc-100 {
+  --primary: 244 244 245;
+}
+.primary-zinc-200 {
+  --primary: 228 228 231;
+}
+.primary-zinc-300 {
+  --primary: 212 212 216;
+}
+.primary-zinc-400 {
+  --primary: 161 161 170;
+}
+.primary-zinc-500 {
+  --primary: 113 113 122;
+}
+.primary-zinc-600 {
+  --primary: 82 82 91;
+}
+.primary-zinc-700 {
+  --primary: 63 63 70;
+}
+.primary-zinc-800 {
+  --primary: 39 39 42;
+}
+.primary-zinc-900 {
+  --primary: 24 24 27;
+}
+.primary-zinc-950 {
+  --primary: 9 9 11;
+}
+.primary-neutral-50 {
+  --primary: 250 250 250;
+}
+.primary-neutral-100 {
+  --primary: 245 245 245;
+}
+.primary-neutral-200 {
+  --primary: 229 229 229;
+}
+.primary-neutral-300 {
+  --primary: 212 212 212;
+}
+.primary-neutral-400 {
+  --primary: 163 163 163;
+}
+.primary-neutral-500 {
+  --primary: 115 115 115;
+}
+.primary-neutral-600 {
+  --primary: 82 82 82;
+}
+.primary-neutral-700 {
+  --primary: 64 64 64;
+}
+.primary-neutral-800 {
+  --primary: 38 38 38;
+}
+.primary-neutral-900 {
+  --primary: 23 23 23;
+}
+.primary-neutral-950 {
+  --primary: 10 10 10;
+}
+.primary-stone-50 {
+  --primary: 250 250 249;
+}
+.primary-stone-100 {
+  --primary: 245 245 244;
+}
+.primary-stone-200 {
+  --primary: 231 229 228;
+}
+.primary-stone-300 {
+  --primary: 214 211 209;
+}
+.primary-stone-400 {
+  --primary: 168 162 158;
+}
+.primary-stone-500 {
+  --primary: 120 113 108;
+}
+.primary-stone-600 {
+  --primary: 87 83 78;
+}
+.primary-stone-700 {
+  --primary: 68 64 60;
+}
+.primary-stone-800 {
+  --primary: 41 37 36;
+}
+.primary-stone-900 {
+  --primary: 28 25 23;
+}
+.primary-stone-950 {
+  --primary: 12 10 9;
+}
+.primary-red-50 {
+  --primary: 254 242 242;
+}
+.primary-red-100 {
+  --primary: 254 226 226;
+}
+.primary-red-200 {
+  --primary: 254 202 202;
+}
+.primary-red-300 {
+  --primary: 252 165 165;
+}
+.primary-red-400 {
+  --primary: 248 113 113;
+}
+.primary-red-500 {
+  --primary: 239 68 68;
+}
+.primary-red-600 {
+  --primary: 220 38 38;
+}
+.primary-red-700 {
+  --primary: 185 28 28;
+}
+.primary-red-800 {
+  --primary: 153 27 27;
+}
+.primary-red-900 {
+  --primary: 127 29 29;
+}
+.primary-red-950 {
+  --primary: 69 10 10;
+}
+.primary-orange-50 {
+  --primary: 255 247 237;
+}
+.primary-orange-100 {
+  --primary: 255 237 213;
+}
+.primary-orange-200 {
+  --primary: 254 215 170;
+}
+.primary-orange-300 {
+  --primary: 253 186 116;
+}
+.primary-orange-400 {
+  --primary: 251 146 60;
+}
+.primary-orange-500 {
+  --primary: 249 115 22;
+}
+.primary-orange-600 {
+  --primary: 234 88 12;
+}
+.primary-orange-700 {
+  --primary: 194 65 12;
+}
+.primary-orange-800 {
+  --primary: 154 52 18;
+}
+.primary-orange-900 {
+  --primary: 124 45 18;
+}
+.primary-orange-950 {
+  --primary: 67 20 7;
+}
+.primary-amber-50 {
+  --primary: 255 251 235;
+}
+.primary-amber-100 {
+  --primary: 254 243 199;
+}
+.primary-amber-200 {
+  --primary: 253 230 138;
+}
+.primary-amber-300 {
+  --primary: 252 211 77;
+}
+.primary-amber-400 {
+  --primary: 251 191 36;
+}
+.primary-amber-500 {
+  --primary: 245 158 11;
+}
+.primary-amber-600 {
+  --primary: 217 119 6;
+}
+.primary-amber-700 {
+  --primary: 180 83 9;
+}
+.primary-amber-800 {
+  --primary: 146 64 14;
+}
+.primary-amber-900 {
+  --primary: 120 53 15;
+}
+.primary-amber-950 {
+  --primary: 69 26 3;
+}
+.primary-yellow-50 {
+  --primary: 254 252 232;
+}
+.primary-yellow-100 {
+  --primary: 254 249 195;
+}
+.primary-yellow-200 {
+  --primary: 254 240 138;
+}
+.primary-yellow-300 {
+  --primary: 253 224 71;
+}
+.primary-yellow-400 {
+  --primary: 250 204 21;
+}
+.primary-yellow-500 {
+  --primary: 234 179 8;
+}
+.primary-yellow-600 {
+  --primary: 202 138 4;
+}
+.primary-yellow-700 {
+  --primary: 161 98 7;
+}
+.primary-yellow-800 {
+  --primary: 133 77 14;
+}
+.primary-yellow-900 {
+  --primary: 113 63 18;
+}
+.primary-yellow-950 {
+  --primary: 66 32 6;
+}
+.primary-lime-50 {
+  --primary: 247 254 231;
+}
+.primary-lime-100 {
+  --primary: 236 252 203;
+}
+.primary-lime-200 {
+  --primary: 217 249 157;
+}
+.primary-lime-300 {
+  --primary: 190 242 100;
+}
+.primary-lime-400 {
+  --primary: 163 230 53;
+}
+.primary-lime-500 {
+  --primary: 132 204 22;
+}
+.primary-lime-600 {
+  --primary: 101 163 13;
+}
+.primary-lime-700 {
+  --primary: 77 124 15;
+}
+.primary-lime-800 {
+  --primary: 63 98 18;
+}
+.primary-lime-900 {
+  --primary: 54 83 20;
+}
+.primary-lime-950 {
+  --primary: 26 46 5;
+}
+.primary-green-50 {
+  --primary: 240 253 244;
+}
+.primary-green-100 {
+  --primary: 220 252 231;
+}
+.primary-green-200 {
+  --primary: 187 247 208;
+}
+.primary-green-300 {
+  --primary: 134 239 172;
+}
+.primary-green-400 {
+  --primary: 74 222 128;
+}
+.primary-green-500 {
+  --primary: 34 197 94;
+}
+.primary-green-600 {
+  --primary: 22 163 74;
+}
+.primary-green-700 {
+  --primary: 21 128 61;
+}
+.primary-green-800 {
+  --primary: 22 101 52;
+}
+.primary-green-900 {
+  --primary: 20 83 45;
+}
+.primary-green-950 {
+  --primary: 5 46 22;
+}
+.primary-emerald-50 {
+  --primary: 236 253 245;
+}
+.primary-emerald-100 {
+  --primary: 209 250 229;
+}
+.primary-emerald-200 {
+  --primary: 167 243 208;
+}
+.primary-emerald-300 {
+  --primary: 110 231 183;
+}
+.primary-emerald-400 {
+  --primary: 52 211 153;
+}
+.primary-emerald-500 {
+  --primary: 16 185 129;
+}
+.primary-emerald-600 {
+  --primary: 5 150 105;
+}
+.primary-emerald-700 {
+  --primary: 4 120 87;
+}
+.primary-emerald-800 {
+  --primary: 6 95 70;
+}
+.primary-emerald-900 {
+  --primary: 6 78 59;
+}
+.primary-emerald-950 {
+  --primary: 2 44 34;
+}
+.primary-teal-50 {
+  --primary: 240 253 250;
+}
+.primary-teal-100 {
+  --primary: 204 251 241;
+}
+.primary-teal-200 {
+  --primary: 153 246 228;
+}
+.primary-teal-300 {
+  --primary: 94 234 212;
+}
+.primary-teal-400 {
+  --primary: 45 212 191;
+}
+.primary-teal-500 {
+  --primary: 20 184 166;
+}
+.primary-teal-600 {
+  --primary: 13 148 136;
+}
+.primary-teal-700 {
+  --primary: 15 118 110;
+}
+.primary-teal-800 {
+  --primary: 17 94 89;
+}
+.primary-teal-900 {
+  --primary: 19 78 74;
+}
+.primary-teal-950 {
+  --primary: 4 47 46;
+}
+.primary-cyan-50 {
+  --primary: 236 254 255;
+}
+.primary-cyan-100 {
+  --primary: 207 250 254;
+}
+.primary-cyan-200 {
+  --primary: 165 243 252;
+}
+.primary-cyan-300 {
+  --primary: 103 232 249;
+}
+.primary-cyan-400 {
+  --primary: 34 211 238;
+}
+.primary-cyan-500 {
+  --primary: 6 182 212;
+}
+.primary-cyan-600 {
+  --primary: 8 145 178;
+}
+.primary-cyan-700 {
+  --primary: 14 116 144;
+}
+.primary-cyan-800 {
+  --primary: 21 94 117;
+}
+.primary-cyan-900 {
+  --primary: 22 78 99;
+}
+.primary-cyan-950 {
+  --primary: 8 51 68;
+}
+.primary-sky-50 {
+  --primary: 240 249 255;
+}
+.primary-sky-100 {
+  --primary: 224 242 254;
+}
+.primary-sky-200 {
+  --primary: 186 230 253;
+}
+.primary-sky-300 {
+  --primary: 125 211 252;
+}
+.primary-sky-400 {
+  --primary: 56 189 248;
+}
+.primary-sky-500 {
+  --primary: 14 165 233;
+}
+.primary-sky-600 {
+  --primary: 2 132 199;
+}
+.primary-sky-700 {
+  --primary: 3 105 161;
+}
+.primary-sky-800 {
+  --primary: 7 89 133;
+}
+.primary-sky-900 {
+  --primary: 12 74 110;
+}
+.primary-sky-950 {
+  --primary: 8 47 73;
+}
+.primary-blue-50 {
+  --primary: 239 246 255;
+}
+.primary-blue-100 {
+  --primary: 219 234 254;
+}
+.primary-blue-200 {
+  --primary: 191 219 254;
+}
+.primary-blue-300 {
+  --primary: 147 197 253;
+}
+.primary-blue-400 {
+  --primary: 96 165 250;
+}
+.primary-blue-500 {
+  --primary: 59 130 246;
+}
+.primary-blue-600 {
+  --primary: 37 99 235;
+}
+.primary-blue-700 {
+  --primary: 29 78 216;
+}
+.primary-blue-800 {
+  --primary: 30 64 175;
+}
+.primary-blue-900 {
+  --primary: 30 58 138;
+}
+.primary-blue-950 {
+  --primary: 23 37 84;
+}
+.primary-indigo-50 {
+  --primary: 238 242 255;
+}
+.primary-indigo-100 {
+  --primary: 224 231 255;
+}
+.primary-indigo-200 {
+  --primary: 199 210 254;
+}
+.primary-indigo-300 {
+  --primary: 165 180 252;
+}
+.primary-indigo-400 {
+  --primary: 129 140 248;
+}
+.primary-indigo-500 {
+  --primary: 99 102 241;
+}
+.primary-indigo-600 {
+  --primary: 79 70 229;
+}
+.primary-indigo-700 {
+  --primary: 67 56 202;
+}
+.primary-indigo-800 {
+  --primary: 55 48 163;
+}
+.primary-indigo-900 {
+  --primary: 49 46 129;
+}
+.primary-indigo-950 {
+  --primary: 30 27 75;
+}
+.primary-violet-50 {
+  --primary: 245 243 255;
+}
+.primary-violet-100 {
+  --primary: 237 233 254;
+}
+.primary-violet-200 {
+  --primary: 221 214 254;
+}
+.primary-violet-300 {
+  --primary: 196 181 253;
+}
+.primary-violet-400 {
+  --primary: 167 139 250;
+}
+.primary-violet-500 {
+  --primary: 139 92 246;
+}
+.primary-violet-600 {
+  --primary: 124 58 237;
+}
+.primary-violet-700 {
+  --primary: 109 40 217;
+}
+.primary-violet-800 {
+  --primary: 91 33 182;
+}
+.primary-violet-900 {
+  --primary: 76 29 149;
+}
+.primary-violet-950 {
+  --primary: 46 16 101;
+}
+.primary-purple-50 {
+  --primary: 250 245 255;
+}
+.primary-purple-100 {
+  --primary: 243 232 255;
+}
+.primary-purple-200 {
+  --primary: 233 213 255;
+}
+.primary-purple-300 {
+  --primary: 216 180 254;
+}
+.primary-purple-400 {
+  --primary: 192 132 252;
+}
+.primary-purple-500 {
+  --primary: 168 85 247;
+}
+.primary-purple-600 {
+  --primary: 147 51 234;
+}
+.primary-purple-700 {
+  --primary: 126 34 206;
+}
+.primary-purple-800 {
+  --primary: 107 33 168;
+}
+.primary-purple-900 {
+  --primary: 88 28 135;
+}
+.primary-purple-950 {
+  --primary: 59 7 100;
+}
+.primary-fuchsia-50 {
+  --primary: 253 244 255;
+}
+.primary-fuchsia-100 {
+  --primary: 250 232 255;
+}
+.primary-fuchsia-200 {
+  --primary: 245 208 254;
+}
+.primary-fuchsia-300 {
+  --primary: 240 171 252;
+}
+.primary-fuchsia-400 {
+  --primary: 232 121 249;
+}
+.primary-fuchsia-500 {
+  --primary: 217 70 239;
+}
+.primary-fuchsia-600 {
+  --primary: 192 38 211;
+}
+.primary-fuchsia-700 {
+  --primary: 162 28 175;
+}
+.primary-fuchsia-800 {
+  --primary: 134 25 143;
+}
+.primary-fuchsia-900 {
+  --primary: 112 26 117;
+}
+.primary-fuchsia-950 {
+  --primary: 74 4 78;
+}
+.primary-pink-50 {
+  --primary: 253 242 248;
+}
+.primary-pink-100 {
+  --primary: 252 231 243;
+}
+.primary-pink-200 {
+  --primary: 251 207 232;
+}
+.primary-pink-300 {
+  --primary: 249 168 212;
+}
+.primary-pink-400 {
+  --primary: 244 114 182;
+}
+.primary-pink-500 {
+  --primary: 236 72 153;
+}
+.primary-pink-600 {
+  --primary: 219 39 119;
+}
+.primary-pink-700 {
+  --primary: 190 24 93;
+}
+.primary-pink-800 {
+  --primary: 157 23 77;
+}
+.primary-pink-900 {
+  --primary: 131 24 67;
+}
+.primary-pink-950 {
+  --primary: 80 7 36;
+}
+.primary-rose-50 {
+  --primary: 255 241 242;
+}
+.primary-rose-100 {
+  --primary: 255 228 230;
+}
+.primary-rose-200 {
+  --primary: 254 205 211;
+}
+.primary-rose-300 {
+  --primary: 253 164 175;
+}
+.primary-rose-400 {
+  --primary: 251 113 133;
+}
+.primary-rose-500 {
+  --primary: 244 63 94;
+}
+.primary-rose-600 {
+  --primary: 225 29 72;
+}
+.primary-rose-700 {
+  --primary: 190 18 60;
+}
+.primary-rose-800 {
+  --primary: 159 18 57;
+}
+.primary-rose-900 {
+  --primary: 136 19 55;
+}
+.primary-rose-950 {
+  --primary: 76 5 25;
+}
+.secondary-black {
+  --secondary: 0 0 0;
+}
+.secondary-white {
+  --secondary: 255 255 255;
+}
+.secondary-slate-50 {
+  --secondary: 248 250 252;
+}
+.secondary-slate-100 {
+  --secondary: 241 245 249;
+}
+.secondary-slate-200 {
+  --secondary: 226 232 240;
+}
+.secondary-slate-300 {
+  --secondary: 203 213 225;
+}
+.secondary-slate-400 {
+  --secondary: 148 163 184;
+}
+.secondary-slate-500 {
+  --secondary: 100 116 139;
+}
+.secondary-slate-600 {
+  --secondary: 71 85 105;
+}
+.secondary-slate-700 {
+  --secondary: 51 65 85;
+}
+.secondary-slate-800 {
+  --secondary: 30 41 59;
+}
+.secondary-slate-900 {
+  --secondary: 15 23 42;
+}
+.secondary-slate-950 {
+  --secondary: 2 6 23;
+}
+.secondary-gray-50 {
+  --secondary: 249 250 251;
+}
+.secondary-gray-100 {
+  --secondary: 243 244 246;
+}
+.secondary-gray-200 {
+  --secondary: 229 231 235;
+}
+.secondary-gray-300 {
+  --secondary: 209 213 219;
+}
+.secondary-gray-400 {
+  --secondary: 156 163 175;
+}
+.secondary-gray-500 {
+  --secondary: 107 114 128;
+}
+.secondary-gray-600 {
+  --secondary: 75 85 99;
+}
+.secondary-gray-700 {
+  --secondary: 55 65 81;
+}
+.secondary-gray-800 {
+  --secondary: 31 41 55;
+}
+.secondary-gray-900 {
+  --secondary: 17 24 39;
+}
+.secondary-gray-950 {
+  --secondary: 3 7 18;
+}
+.secondary-zinc-50 {
+  --secondary: 250 250 250;
+}
+.secondary-zinc-100 {
+  --secondary: 244 244 245;
+}
+.secondary-zinc-200 {
+  --secondary: 228 228 231;
+}
+.secondary-zinc-300 {
+  --secondary: 212 212 216;
+}
+.secondary-zinc-400 {
+  --secondary: 161 161 170;
+}
+.secondary-zinc-500 {
+  --secondary: 113 113 122;
+}
+.secondary-zinc-600 {
+  --secondary: 82 82 91;
+}
+.secondary-zinc-700 {
+  --secondary: 63 63 70;
+}
+.secondary-zinc-800 {
+  --secondary: 39 39 42;
+}
+.secondary-zinc-900 {
+  --secondary: 24 24 27;
+}
+.secondary-zinc-950 {
+  --secondary: 9 9 11;
+}
+.secondary-neutral-50 {
+  --secondary: 250 250 250;
+}
+.secondary-neutral-100 {
+  --secondary: 245 245 245;
+}
+.secondary-neutral-200 {
+  --secondary: 229 229 229;
+}
+.secondary-neutral-300 {
+  --secondary: 212 212 212;
+}
+.secondary-neutral-400 {
+  --secondary: 163 163 163;
+}
+.secondary-neutral-500 {
+  --secondary: 115 115 115;
+}
+.secondary-neutral-600 {
+  --secondary: 82 82 82;
+}
+.secondary-neutral-700 {
+  --secondary: 64 64 64;
+}
+.secondary-neutral-800 {
+  --secondary: 38 38 38;
+}
+.secondary-neutral-900 {
+  --secondary: 23 23 23;
+}
+.secondary-neutral-950 {
+  --secondary: 10 10 10;
+}
+.secondary-stone-50 {
+  --secondary: 250 250 249;
+}
+.secondary-stone-100 {
+  --secondary: 245 245 244;
+}
+.secondary-stone-200 {
+  --secondary: 231 229 228;
+}
+.secondary-stone-300 {
+  --secondary: 214 211 209;
+}
+.secondary-stone-400 {
+  --secondary: 168 162 158;
+}
+.secondary-stone-500 {
+  --secondary: 120 113 108;
+}
+.secondary-stone-600 {
+  --secondary: 87 83 78;
+}
+.secondary-stone-700 {
+  --secondary: 68 64 60;
+}
+.secondary-stone-800 {
+  --secondary: 41 37 36;
+}
+.secondary-stone-900 {
+  --secondary: 28 25 23;
+}
+.secondary-stone-950 {
+  --secondary: 12 10 9;
+}
+.secondary-red-50 {
+  --secondary: 254 242 242;
+}
+.secondary-red-100 {
+  --secondary: 254 226 226;
+}
+.secondary-red-200 {
+  --secondary: 254 202 202;
+}
+.secondary-red-300 {
+  --secondary: 252 165 165;
+}
+.secondary-red-400 {
+  --secondary: 248 113 113;
+}
+.secondary-red-500 {
+  --secondary: 239 68 68;
+}
+.secondary-red-600 {
+  --secondary: 220 38 38;
+}
+.secondary-red-700 {
+  --secondary: 185 28 28;
+}
+.secondary-red-800 {
+  --secondary: 153 27 27;
+}
+.secondary-red-900 {
+  --secondary: 127 29 29;
+}
+.secondary-red-950 {
+  --secondary: 69 10 10;
+}
+.secondary-orange-50 {
+  --secondary: 255 247 237;
+}
+.secondary-orange-100 {
+  --secondary: 255 237 213;
+}
+.secondary-orange-200 {
+  --secondary: 254 215 170;
+}
+.secondary-orange-300 {
+  --secondary: 253 186 116;
+}
+.secondary-orange-400 {
+  --secondary: 251 146 60;
+}
+.secondary-orange-500 {
+  --secondary: 249 115 22;
+}
+.secondary-orange-600 {
+  --secondary: 234 88 12;
+}
+.secondary-orange-700 {
+  --secondary: 194 65 12;
+}
+.secondary-orange-800 {
+  --secondary: 154 52 18;
+}
+.secondary-orange-900 {
+  --secondary: 124 45 18;
+}
+.secondary-orange-950 {
+  --secondary: 67 20 7;
+}
+.secondary-amber-50 {
+  --secondary: 255 251 235;
+}
+.secondary-amber-100 {
+  --secondary: 254 243 199;
+}
+.secondary-amber-200 {
+  --secondary: 253 230 138;
+}
+.secondary-amber-300 {
+  --secondary: 252 211 77;
+}
+.secondary-amber-400 {
+  --secondary: 251 191 36;
+}
+.secondary-amber-500 {
+  --secondary: 245 158 11;
+}
+.secondary-amber-600 {
+  --secondary: 217 119 6;
+}
+.secondary-amber-700 {
+  --secondary: 180 83 9;
+}
+.secondary-amber-800 {
+  --secondary: 146 64 14;
+}
+.secondary-amber-900 {
+  --secondary: 120 53 15;
+}
+.secondary-amber-950 {
+  --secondary: 69 26 3;
+}
+.secondary-yellow-50 {
+  --secondary: 254 252 232;
+}
+.secondary-yellow-100 {
+  --secondary: 254 249 195;
+}
+.secondary-yellow-200 {
+  --secondary: 254 240 138;
+}
+.secondary-yellow-300 {
+  --secondary: 253 224 71;
+}
+.secondary-yellow-400 {
+  --secondary: 250 204 21;
+}
+.secondary-yellow-500 {
+  --secondary: 234 179 8;
+}
+.secondary-yellow-600 {
+  --secondary: 202 138 4;
+}
+.secondary-yellow-700 {
+  --secondary: 161 98 7;
+}
+.secondary-yellow-800 {
+  --secondary: 133 77 14;
+}
+.secondary-yellow-900 {
+  --secondary: 113 63 18;
+}
+.secondary-yellow-950 {
+  --secondary: 66 32 6;
+}
+.secondary-lime-50 {
+  --secondary: 247 254 231;
+}
+.secondary-lime-100 {
+  --secondary: 236 252 203;
+}
+.secondary-lime-200 {
+  --secondary: 217 249 157;
+}
+.secondary-lime-300 {
+  --secondary: 190 242 100;
+}
+.secondary-lime-400 {
+  --secondary: 163 230 53;
+}
+.secondary-lime-500 {
+  --secondary: 132 204 22;
+}
+.secondary-lime-600 {
+  --secondary: 101 163 13;
+}
+.secondary-lime-700 {
+  --secondary: 77 124 15;
+}
+.secondary-lime-800 {
+  --secondary: 63 98 18;
+}
+.secondary-lime-900 {
+  --secondary: 54 83 20;
+}
+.secondary-lime-950 {
+  --secondary: 26 46 5;
+}
+.secondary-green-50 {
+  --secondary: 240 253 244;
+}
+.secondary-green-100 {
+  --secondary: 220 252 231;
+}
+.secondary-green-200 {
+  --secondary: 187 247 208;
+}
+.secondary-green-300 {
+  --secondary: 134 239 172;
+}
+.secondary-green-400 {
+  --secondary: 74 222 128;
+}
+.secondary-green-500 {
+  --secondary: 34 197 94;
+}
+.secondary-green-600 {
+  --secondary: 22 163 74;
+}
+.secondary-green-700 {
+  --secondary: 21 128 61;
+}
+.secondary-green-800 {
+  --secondary: 22 101 52;
+}
+.secondary-green-900 {
+  --secondary: 20 83 45;
+}
+.secondary-green-950 {
+  --secondary: 5 46 22;
+}
+.secondary-emerald-50 {
+  --secondary: 236 253 245;
+}
+.secondary-emerald-100 {
+  --secondary: 209 250 229;
+}
+.secondary-emerald-200 {
+  --secondary: 167 243 208;
+}
+.secondary-emerald-300 {
+  --secondary: 110 231 183;
+}
+.secondary-emerald-400 {
+  --secondary: 52 211 153;
+}
+.secondary-emerald-500 {
+  --secondary: 16 185 129;
+}
+.secondary-emerald-600 {
+  --secondary: 5 150 105;
+}
+.secondary-emerald-700 {
+  --secondary: 4 120 87;
+}
+.secondary-emerald-800 {
+  --secondary: 6 95 70;
+}
+.secondary-emerald-900 {
+  --secondary: 6 78 59;
+}
+.secondary-emerald-950 {
+  --secondary: 2 44 34;
+}
+.secondary-teal-50 {
+  --secondary: 240 253 250;
+}
+.secondary-teal-100 {
+  --secondary: 204 251 241;
+}
+.secondary-teal-200 {
+  --secondary: 153 246 228;
+}
+.secondary-teal-300 {
+  --secondary: 94 234 212;
+}
+.secondary-teal-400 {
+  --secondary: 45 212 191;
+}
+.secondary-teal-500 {
+  --secondary: 20 184 166;
+}
+.secondary-teal-600 {
+  --secondary: 13 148 136;
+}
+.secondary-teal-700 {
+  --secondary: 15 118 110;
+}
+.secondary-teal-800 {
+  --secondary: 17 94 89;
+}
+.secondary-teal-900 {
+  --secondary: 19 78 74;
+}
+.secondary-teal-950 {
+  --secondary: 4 47 46;
+}
+.secondary-cyan-50 {
+  --secondary: 236 254 255;
+}
+.secondary-cyan-100 {
+  --secondary: 207 250 254;
+}
+.secondary-cyan-200 {
+  --secondary: 165 243 252;
+}
+.secondary-cyan-300 {
+  --secondary: 103 232 249;
+}
+.secondary-cyan-400 {
+  --secondary: 34 211 238;
+}
+.secondary-cyan-500 {
+  --secondary: 6 182 212;
+}
+.secondary-cyan-600 {
+  --secondary: 8 145 178;
+}
+.secondary-cyan-700 {
+  --secondary: 14 116 144;
+}
+.secondary-cyan-800 {
+  --secondary: 21 94 117;
+}
+.secondary-cyan-900 {
+  --secondary: 22 78 99;
+}
+.secondary-cyan-950 {
+  --secondary: 8 51 68;
+}
+.secondary-sky-50 {
+  --secondary: 240 249 255;
+}
+.secondary-sky-100 {
+  --secondary: 224 242 254;
+}
+.secondary-sky-200 {
+  --secondary: 186 230 253;
+}
+.secondary-sky-300 {
+  --secondary: 125 211 252;
+}
+.secondary-sky-400 {
+  --secondary: 56 189 248;
+}
+.secondary-sky-500 {
+  --secondary: 14 165 233;
+}
+.secondary-sky-600 {
+  --secondary: 2 132 199;
+}
+.secondary-sky-700 {
+  --secondary: 3 105 161;
+}
+.secondary-sky-800 {
+  --secondary: 7 89 133;
+}
+.secondary-sky-900 {
+  --secondary: 12 74 110;
+}
+.secondary-sky-950 {
+  --secondary: 8 47 73;
+}
+.secondary-blue-50 {
+  --secondary: 239 246 255;
+}
+.secondary-blue-100 {
+  --secondary: 219 234 254;
+}
+.secondary-blue-200 {
+  --secondary: 191 219 254;
+}
+.secondary-blue-300 {
+  --secondary: 147 197 253;
+}
+.secondary-blue-400 {
+  --secondary: 96 165 250;
+}
+.secondary-blue-500 {
+  --secondary: 59 130 246;
+}
+.secondary-blue-600 {
+  --secondary: 37 99 235;
+}
+.secondary-blue-700 {
+  --secondary: 29 78 216;
+}
+.secondary-blue-800 {
+  --secondary: 30 64 175;
+}
+.secondary-blue-900 {
+  --secondary: 30 58 138;
+}
+.secondary-blue-950 {
+  --secondary: 23 37 84;
+}
+.secondary-indigo-50 {
+  --secondary: 238 242 255;
+}
+.secondary-indigo-100 {
+  --secondary: 224 231 255;
+}
+.secondary-indigo-200 {
+  --secondary: 199 210 254;
+}
+.secondary-indigo-300 {
+  --secondary: 165 180 252;
+}
+.secondary-indigo-400 {
+  --secondary: 129 140 248;
+}
+.secondary-indigo-500 {
+  --secondary: 99 102 241;
+}
+.secondary-indigo-600 {
+  --secondary: 79 70 229;
+}
+.secondary-indigo-700 {
+  --secondary: 67 56 202;
+}
+.secondary-indigo-800 {
+  --secondary: 55 48 163;
+}
+.secondary-indigo-900 {
+  --secondary: 49 46 129;
+}
+.secondary-indigo-950 {
+  --secondary: 30 27 75;
+}
+.secondary-violet-50 {
+  --secondary: 245 243 255;
+}
+.secondary-violet-100 {
+  --secondary: 237 233 254;
+}
+.secondary-violet-200 {
+  --secondary: 221 214 254;
+}
+.secondary-violet-300 {
+  --secondary: 196 181 253;
+}
+.secondary-violet-400 {
+  --secondary: 167 139 250;
+}
+.secondary-violet-500 {
+  --secondary: 139 92 246;
+}
+.secondary-violet-600 {
+  --secondary: 124 58 237;
+}
+.secondary-violet-700 {
+  --secondary: 109 40 217;
+}
+.secondary-violet-800 {
+  --secondary: 91 33 182;
+}
+.secondary-violet-900 {
+  --secondary: 76 29 149;
+}
+.secondary-violet-950 {
+  --secondary: 46 16 101;
+}
+.secondary-purple-50 {
+  --secondary: 250 245 255;
+}
+.secondary-purple-100 {
+  --secondary: 243 232 255;
+}
+.secondary-purple-200 {
+  --secondary: 233 213 255;
+}
+.secondary-purple-300 {
+  --secondary: 216 180 254;
+}
+.secondary-purple-400 {
+  --secondary: 192 132 252;
+}
+.secondary-purple-500 {
+  --secondary: 168 85 247;
+}
+.secondary-purple-600 {
+  --secondary: 147 51 234;
+}
+.secondary-purple-700 {
+  --secondary: 126 34 206;
+}
+.secondary-purple-800 {
+  --secondary: 107 33 168;
+}
+.secondary-purple-900 {
+  --secondary: 88 28 135;
+}
+.secondary-purple-950 {
+  --secondary: 59 7 100;
+}
+.secondary-fuchsia-50 {
+  --secondary: 253 244 255;
+}
+.secondary-fuchsia-100 {
+  --secondary: 250 232 255;
+}
+.secondary-fuchsia-200 {
+  --secondary: 245 208 254;
+}
+.secondary-fuchsia-300 {
+  --secondary: 240 171 252;
+}
+.secondary-fuchsia-400 {
+  --secondary: 232 121 249;
+}
+.secondary-fuchsia-500 {
+  --secondary: 217 70 239;
+}
+.secondary-fuchsia-600 {
+  --secondary: 192 38 211;
+}
+.secondary-fuchsia-700 {
+  --secondary: 162 28 175;
+}
+.secondary-fuchsia-800 {
+  --secondary: 134 25 143;
+}
+.secondary-fuchsia-900 {
+  --secondary: 112 26 117;
+}
+.secondary-fuchsia-950 {
+  --secondary: 74 4 78;
+}
+.secondary-pink-50 {
+  --secondary: 253 242 248;
+}
+.secondary-pink-100 {
+  --secondary: 252 231 243;
+}
+.secondary-pink-200 {
+  --secondary: 251 207 232;
+}
+.secondary-pink-300 {
+  --secondary: 249 168 212;
+}
+.secondary-pink-400 {
+  --secondary: 244 114 182;
+}
+.secondary-pink-500 {
+  --secondary: 236 72 153;
+}
+.secondary-pink-600 {
+  --secondary: 219 39 119;
+}
+.secondary-pink-700 {
+  --secondary: 190 24 93;
+}
+.secondary-pink-800 {
+  --secondary: 157 23 77;
+}
+.secondary-pink-900 {
+  --secondary: 131 24 67;
+}
+.secondary-pink-950 {
+  --secondary: 80 7 36;
+}
+.secondary-rose-50 {
+  --secondary: 255 241 242;
+}
+.secondary-rose-100 {
+  --secondary: 255 228 230;
+}
+.secondary-rose-200 {
+  --secondary: 254 205 211;
+}
+.secondary-rose-300 {
+  --secondary: 253 164 175;
+}
+.secondary-rose-400 {
+  --secondary: 251 113 133;
+}
+.secondary-rose-500 {
+  --secondary: 244 63 94;
+}
+.secondary-rose-600 {
+  --secondary: 225 29 72;
+}
+.secondary-rose-700 {
+  --secondary: 190 18 60;
+}
+.secondary-rose-800 {
+  --secondary: 159 18 57;
+}
+.secondary-rose-900 {
+  --secondary: 136 19 55;
+}
+.secondary-rose-950 {
+  --secondary: 76 5 25;
+}
 .background-black {
   --background: 0 0 0;
 }
@@ -2193,576 +3657,4 @@
 }
 .text-rose-950 {
   --text: 76 5 25;
-}
-.primary-slate {
-  --primary-50: 248 250 252;
-  --primary-100: 241 245 249;
-  --primary-200: 226 232 240;
-  --primary-300: 203 213 225;
-  --primary-400: 148 163 184;
-  --primary-500: 100 116 139;
-  --primary-600: 71 85 105;
-  --primary-700: 51 65 85;
-  --primary-800: 30 41 59;
-  --primary-900: 15 23 42;
-  --primary-950: 2 6 23;
-}
-.primary-gray {
-  --primary-50: 249 250 251;
-  --primary-100: 243 244 246;
-  --primary-200: 229 231 235;
-  --primary-300: 209 213 219;
-  --primary-400: 156 163 175;
-  --primary-500: 107 114 128;
-  --primary-600: 75 85 99;
-  --primary-700: 55 65 81;
-  --primary-800: 31 41 55;
-  --primary-900: 17 24 39;
-  --primary-950: 3 7 18;
-}
-.primary-zinc {
-  --primary-50: 250 250 250;
-  --primary-100: 244 244 245;
-  --primary-200: 228 228 231;
-  --primary-300: 212 212 216;
-  --primary-400: 161 161 170;
-  --primary-500: 113 113 122;
-  --primary-600: 82 82 91;
-  --primary-700: 63 63 70;
-  --primary-800: 39 39 42;
-  --primary-900: 24 24 27;
-  --primary-950: 9 9 11;
-}
-.primary-neutral {
-  --primary-50: 250 250 250;
-  --primary-100: 245 245 245;
-  --primary-200: 229 229 229;
-  --primary-300: 212 212 212;
-  --primary-400: 163 163 163;
-  --primary-500: 115 115 115;
-  --primary-600: 82 82 82;
-  --primary-700: 64 64 64;
-  --primary-800: 38 38 38;
-  --primary-900: 23 23 23;
-  --primary-950: 10 10 10;
-}
-.primary-stone {
-  --primary-50: 250 250 249;
-  --primary-100: 245 245 244;
-  --primary-200: 231 229 228;
-  --primary-300: 214 211 209;
-  --primary-400: 168 162 158;
-  --primary-500: 120 113 108;
-  --primary-600: 87 83 78;
-  --primary-700: 68 64 60;
-  --primary-800: 41 37 36;
-  --primary-900: 28 25 23;
-  --primary-950: 12 10 9;
-}
-.primary-red {
-  --primary-50: 254 242 242;
-  --primary-100: 254 226 226;
-  --primary-200: 254 202 202;
-  --primary-300: 252 165 165;
-  --primary-400: 248 113 113;
-  --primary-500: 239 68 68;
-  --primary-600: 220 38 38;
-  --primary-700: 185 28 28;
-  --primary-800: 153 27 27;
-  --primary-900: 127 29 29;
-  --primary-950: 69 10 10;
-}
-.primary-orange {
-  --primary-50: 255 247 237;
-  --primary-100: 255 237 213;
-  --primary-200: 254 215 170;
-  --primary-300: 253 186 116;
-  --primary-400: 251 146 60;
-  --primary-500: 249 115 22;
-  --primary-600: 234 88 12;
-  --primary-700: 194 65 12;
-  --primary-800: 154 52 18;
-  --primary-900: 124 45 18;
-  --primary-950: 67 20 7;
-}
-.primary-amber {
-  --primary-50: 255 251 235;
-  --primary-100: 254 243 199;
-  --primary-200: 253 230 138;
-  --primary-300: 252 211 77;
-  --primary-400: 251 191 36;
-  --primary-500: 245 158 11;
-  --primary-600: 217 119 6;
-  --primary-700: 180 83 9;
-  --primary-800: 146 64 14;
-  --primary-900: 120 53 15;
-  --primary-950: 69 26 3;
-}
-.primary-yellow {
-  --primary-50: 254 252 232;
-  --primary-100: 254 249 195;
-  --primary-200: 254 240 138;
-  --primary-300: 253 224 71;
-  --primary-400: 250 204 21;
-  --primary-500: 234 179 8;
-  --primary-600: 202 138 4;
-  --primary-700: 161 98 7;
-  --primary-800: 133 77 14;
-  --primary-900: 113 63 18;
-  --primary-950: 66 32 6;
-}
-.primary-lime {
-  --primary-50: 247 254 231;
-  --primary-100: 236 252 203;
-  --primary-200: 217 249 157;
-  --primary-300: 190 242 100;
-  --primary-400: 163 230 53;
-  --primary-500: 132 204 22;
-  --primary-600: 101 163 13;
-  --primary-700: 77 124 15;
-  --primary-800: 63 98 18;
-  --primary-900: 54 83 20;
-  --primary-950: 26 46 5;
-}
-.primary-green {
-  --primary-50: 240 253 244;
-  --primary-100: 220 252 231;
-  --primary-200: 187 247 208;
-  --primary-300: 134 239 172;
-  --primary-400: 74 222 128;
-  --primary-500: 34 197 94;
-  --primary-600: 22 163 74;
-  --primary-700: 21 128 61;
-  --primary-800: 22 101 52;
-  --primary-900: 20 83 45;
-  --primary-950: 5 46 22;
-}
-.primary-emerald {
-  --primary-50: 236 253 245;
-  --primary-100: 209 250 229;
-  --primary-200: 167 243 208;
-  --primary-300: 110 231 183;
-  --primary-400: 52 211 153;
-  --primary-500: 16 185 129;
-  --primary-600: 5 150 105;
-  --primary-700: 4 120 87;
-  --primary-800: 6 95 70;
-  --primary-900: 6 78 59;
-  --primary-950: 2 44 34;
-}
-.primary-teal {
-  --primary-50: 240 253 250;
-  --primary-100: 204 251 241;
-  --primary-200: 153 246 228;
-  --primary-300: 94 234 212;
-  --primary-400: 45 212 191;
-  --primary-500: 20 184 166;
-  --primary-600: 13 148 136;
-  --primary-700: 15 118 110;
-  --primary-800: 17 94 89;
-  --primary-900: 19 78 74;
-  --primary-950: 4 47 46;
-}
-.primary-cyan {
-  --primary-50: 236 254 255;
-  --primary-100: 207 250 254;
-  --primary-200: 165 243 252;
-  --primary-300: 103 232 249;
-  --primary-400: 34 211 238;
-  --primary-500: 6 182 212;
-  --primary-600: 8 145 178;
-  --primary-700: 14 116 144;
-  --primary-800: 21 94 117;
-  --primary-900: 22 78 99;
-  --primary-950: 8 51 68;
-}
-.primary-sky {
-  --primary-50: 240 249 255;
-  --primary-100: 224 242 254;
-  --primary-200: 186 230 253;
-  --primary-300: 125 211 252;
-  --primary-400: 56 189 248;
-  --primary-500: 14 165 233;
-  --primary-600: 2 132 199;
-  --primary-700: 3 105 161;
-  --primary-800: 7 89 133;
-  --primary-900: 12 74 110;
-  --primary-950: 8 47 73;
-}
-.primary-blue {
-  --primary-50: 239 246 255;
-  --primary-100: 219 234 254;
-  --primary-200: 191 219 254;
-  --primary-300: 147 197 253;
-  --primary-400: 96 165 250;
-  --primary-500: 59 130 246;
-  --primary-600: 37 99 235;
-  --primary-700: 29 78 216;
-  --primary-800: 30 64 175;
-  --primary-900: 30 58 138;
-  --primary-950: 23 37 84;
-}
-.primary-indigo {
-  --primary-50: 238 242 255;
-  --primary-100: 224 231 255;
-  --primary-200: 199 210 254;
-  --primary-300: 165 180 252;
-  --primary-400: 129 140 248;
-  --primary-500: 99 102 241;
-  --primary-600: 79 70 229;
-  --primary-700: 67 56 202;
-  --primary-800: 55 48 163;
-  --primary-900: 49 46 129;
-  --primary-950: 30 27 75;
-}
-.primary-violet {
-  --primary-50: 245 243 255;
-  --primary-100: 237 233 254;
-  --primary-200: 221 214 254;
-  --primary-300: 196 181 253;
-  --primary-400: 167 139 250;
-  --primary-500: 139 92 246;
-  --primary-600: 124 58 237;
-  --primary-700: 109 40 217;
-  --primary-800: 91 33 182;
-  --primary-900: 76 29 149;
-  --primary-950: 46 16 101;
-}
-.primary-purple {
-  --primary-50: 250 245 255;
-  --primary-100: 243 232 255;
-  --primary-200: 233 213 255;
-  --primary-300: 216 180 254;
-  --primary-400: 192 132 252;
-  --primary-500: 168 85 247;
-  --primary-600: 147 51 234;
-  --primary-700: 126 34 206;
-  --primary-800: 107 33 168;
-  --primary-900: 88 28 135;
-  --primary-950: 59 7 100;
-}
-.primary-fuchsia {
-  --primary-50: 253 244 255;
-  --primary-100: 250 232 255;
-  --primary-200: 245 208 254;
-  --primary-300: 240 171 252;
-  --primary-400: 232 121 249;
-  --primary-500: 217 70 239;
-  --primary-600: 192 38 211;
-  --primary-700: 162 28 175;
-  --primary-800: 134 25 143;
-  --primary-900: 112 26 117;
-  --primary-950: 74 4 78;
-}
-.primary-pink {
-  --primary-50: 253 242 248;
-  --primary-100: 252 231 243;
-  --primary-200: 251 207 232;
-  --primary-300: 249 168 212;
-  --primary-400: 244 114 182;
-  --primary-500: 236 72 153;
-  --primary-600: 219 39 119;
-  --primary-700: 190 24 93;
-  --primary-800: 157 23 77;
-  --primary-900: 131 24 67;
-  --primary-950: 80 7 36;
-}
-.primary-rose {
-  --primary-50: 255 241 242;
-  --primary-100: 255 228 230;
-  --primary-200: 254 205 211;
-  --primary-300: 253 164 175;
-  --primary-400: 251 113 133;
-  --primary-500: 244 63 94;
-  --primary-600: 225 29 72;
-  --primary-700: 190 18 60;
-  --primary-800: 159 18 57;
-  --primary-900: 136 19 55;
-  --primary-950: 76 5 25;
-}
-.secondary-slate {
-  --secondary-50: 248 250 252;
-  --secondary-100: 241 245 249;
-  --secondary-200: 226 232 240;
-  --secondary-300: 203 213 225;
-  --secondary-400: 148 163 184;
-  --secondary-500: 100 116 139;
-  --secondary-600: 71 85 105;
-  --secondary-700: 51 65 85;
-  --secondary-800: 30 41 59;
-  --secondary-900: 15 23 42;
-  --secondary-950: 2 6 23;
-}
-.secondary-gray {
-  --secondary-50: 249 250 251;
-  --secondary-100: 243 244 246;
-  --secondary-200: 229 231 235;
-  --secondary-300: 209 213 219;
-  --secondary-400: 156 163 175;
-  --secondary-500: 107 114 128;
-  --secondary-600: 75 85 99;
-  --secondary-700: 55 65 81;
-  --secondary-800: 31 41 55;
-  --secondary-900: 17 24 39;
-  --secondary-950: 3 7 18;
-}
-.secondary-zinc {
-  --secondary-50: 250 250 250;
-  --secondary-100: 244 244 245;
-  --secondary-200: 228 228 231;
-  --secondary-300: 212 212 216;
-  --secondary-400: 161 161 170;
-  --secondary-500: 113 113 122;
-  --secondary-600: 82 82 91;
-  --secondary-700: 63 63 70;
-  --secondary-800: 39 39 42;
-  --secondary-900: 24 24 27;
-  --secondary-950: 9 9 11;
-}
-.secondary-neutral {
-  --secondary-50: 250 250 250;
-  --secondary-100: 245 245 245;
-  --secondary-200: 229 229 229;
-  --secondary-300: 212 212 212;
-  --secondary-400: 163 163 163;
-  --secondary-500: 115 115 115;
-  --secondary-600: 82 82 82;
-  --secondary-700: 64 64 64;
-  --secondary-800: 38 38 38;
-  --secondary-900: 23 23 23;
-  --secondary-950: 10 10 10;
-}
-.secondary-stone {
-  --secondary-50: 250 250 249;
-  --secondary-100: 245 245 244;
-  --secondary-200: 231 229 228;
-  --secondary-300: 214 211 209;
-  --secondary-400: 168 162 158;
-  --secondary-500: 120 113 108;
-  --secondary-600: 87 83 78;
-  --secondary-700: 68 64 60;
-  --secondary-800: 41 37 36;
-  --secondary-900: 28 25 23;
-  --secondary-950: 12 10 9;
-}
-.secondary-red {
-  --secondary-50: 254 242 242;
-  --secondary-100: 254 226 226;
-  --secondary-200: 254 202 202;
-  --secondary-300: 252 165 165;
-  --secondary-400: 248 113 113;
-  --secondary-500: 239 68 68;
-  --secondary-600: 220 38 38;
-  --secondary-700: 185 28 28;
-  --secondary-800: 153 27 27;
-  --secondary-900: 127 29 29;
-  --secondary-950: 69 10 10;
-}
-.secondary-orange {
-  --secondary-50: 255 247 237;
-  --secondary-100: 255 237 213;
-  --secondary-200: 254 215 170;
-  --secondary-300: 253 186 116;
-  --secondary-400: 251 146 60;
-  --secondary-500: 249 115 22;
-  --secondary-600: 234 88 12;
-  --secondary-700: 194 65 12;
-  --secondary-800: 154 52 18;
-  --secondary-900: 124 45 18;
-  --secondary-950: 67 20 7;
-}
-.secondary-amber {
-  --secondary-50: 255 251 235;
-  --secondary-100: 254 243 199;
-  --secondary-200: 253 230 138;
-  --secondary-300: 252 211 77;
-  --secondary-400: 251 191 36;
-  --secondary-500: 245 158 11;
-  --secondary-600: 217 119 6;
-  --secondary-700: 180 83 9;
-  --secondary-800: 146 64 14;
-  --secondary-900: 120 53 15;
-  --secondary-950: 69 26 3;
-}
-.secondary-yellow {
-  --secondary-50: 254 252 232;
-  --secondary-100: 254 249 195;
-  --secondary-200: 254 240 138;
-  --secondary-300: 253 224 71;
-  --secondary-400: 250 204 21;
-  --secondary-500: 234 179 8;
-  --secondary-600: 202 138 4;
-  --secondary-700: 161 98 7;
-  --secondary-800: 133 77 14;
-  --secondary-900: 113 63 18;
-  --secondary-950: 66 32 6;
-}
-.secondary-lime {
-  --secondary-50: 247 254 231;
-  --secondary-100: 236 252 203;
-  --secondary-200: 217 249 157;
-  --secondary-300: 190 242 100;
-  --secondary-400: 163 230 53;
-  --secondary-500: 132 204 22;
-  --secondary-600: 101 163 13;
-  --secondary-700: 77 124 15;
-  --secondary-800: 63 98 18;
-  --secondary-900: 54 83 20;
-  --secondary-950: 26 46 5;
-}
-.secondary-green {
-  --secondary-50: 240 253 244;
-  --secondary-100: 220 252 231;
-  --secondary-200: 187 247 208;
-  --secondary-300: 134 239 172;
-  --secondary-400: 74 222 128;
-  --secondary-500: 34 197 94;
-  --secondary-600: 22 163 74;
-  --secondary-700: 21 128 61;
-  --secondary-800: 22 101 52;
-  --secondary-900: 20 83 45;
-  --secondary-950: 5 46 22;
-}
-.secondary-emerald {
-  --secondary-50: 236 253 245;
-  --secondary-100: 209 250 229;
-  --secondary-200: 167 243 208;
-  --secondary-300: 110 231 183;
-  --secondary-400: 52 211 153;
-  --secondary-500: 16 185 129;
-  --secondary-600: 5 150 105;
-  --secondary-700: 4 120 87;
-  --secondary-800: 6 95 70;
-  --secondary-900: 6 78 59;
-  --secondary-950: 2 44 34;
-}
-.secondary-teal {
-  --secondary-50: 240 253 250;
-  --secondary-100: 204 251 241;
-  --secondary-200: 153 246 228;
-  --secondary-300: 94 234 212;
-  --secondary-400: 45 212 191;
-  --secondary-500: 20 184 166;
-  --secondary-600: 13 148 136;
-  --secondary-700: 15 118 110;
-  --secondary-800: 17 94 89;
-  --secondary-900: 19 78 74;
-  --secondary-950: 4 47 46;
-}
-.secondary-cyan {
-  --secondary-50: 236 254 255;
-  --secondary-100: 207 250 254;
-  --secondary-200: 165 243 252;
-  --secondary-300: 103 232 249;
-  --secondary-400: 34 211 238;
-  --secondary-500: 6 182 212;
-  --secondary-600: 8 145 178;
-  --secondary-700: 14 116 144;
-  --secondary-800: 21 94 117;
-  --secondary-900: 22 78 99;
-  --secondary-950: 8 51 68;
-}
-.secondary-sky {
-  --secondary-50: 240 249 255;
-  --secondary-100: 224 242 254;
-  --secondary-200: 186 230 253;
-  --secondary-300: 125 211 252;
-  --secondary-400: 56 189 248;
-  --secondary-500: 14 165 233;
-  --secondary-600: 2 132 199;
-  --secondary-700: 3 105 161;
-  --secondary-800: 7 89 133;
-  --secondary-900: 12 74 110;
-  --secondary-950: 8 47 73;
-}
-.secondary-blue {
-  --secondary-50: 239 246 255;
-  --secondary-100: 219 234 254;
-  --secondary-200: 191 219 254;
-  --secondary-300: 147 197 253;
-  --secondary-400: 96 165 250;
-  --secondary-500: 59 130 246;
-  --secondary-600: 37 99 235;
-  --secondary-700: 29 78 216;
-  --secondary-800: 30 64 175;
-  --secondary-900: 30 58 138;
-  --secondary-950: 23 37 84;
-}
-.secondary-indigo {
-  --secondary-50: 238 242 255;
-  --secondary-100: 224 231 255;
-  --secondary-200: 199 210 254;
-  --secondary-300: 165 180 252;
-  --secondary-400: 129 140 248;
-  --secondary-500: 99 102 241;
-  --secondary-600: 79 70 229;
-  --secondary-700: 67 56 202;
-  --secondary-800: 55 48 163;
-  --secondary-900: 49 46 129;
-  --secondary-950: 30 27 75;
-}
-.secondary-violet {
-  --secondary-50: 245 243 255;
-  --secondary-100: 237 233 254;
-  --secondary-200: 221 214 254;
-  --secondary-300: 196 181 253;
-  --secondary-400: 167 139 250;
-  --secondary-500: 139 92 246;
-  --secondary-600: 124 58 237;
-  --secondary-700: 109 40 217;
-  --secondary-800: 91 33 182;
-  --secondary-900: 76 29 149;
-  --secondary-950: 46 16 101;
-}
-.secondary-purple {
-  --secondary-50: 250 245 255;
-  --secondary-100: 243 232 255;
-  --secondary-200: 233 213 255;
-  --secondary-300: 216 180 254;
-  --secondary-400: 192 132 252;
-  --secondary-500: 168 85 247;
-  --secondary-600: 147 51 234;
-  --secondary-700: 126 34 206;
-  --secondary-800: 107 33 168;
-  --secondary-900: 88 28 135;
-  --secondary-950: 59 7 100;
-}
-.secondary-fuchsia {
-  --secondary-50: 253 244 255;
-  --secondary-100: 250 232 255;
-  --secondary-200: 245 208 254;
-  --secondary-300: 240 171 252;
-  --secondary-400: 232 121 249;
-  --secondary-500: 217 70 239;
-  --secondary-600: 192 38 211;
-  --secondary-700: 162 28 175;
-  --secondary-800: 134 25 143;
-  --secondary-900: 112 26 117;
-  --secondary-950: 74 4 78;
-}
-.secondary-pink {
-  --secondary-50: 253 242 248;
-  --secondary-100: 252 231 243;
-  --secondary-200: 251 207 232;
-  --secondary-300: 249 168 212;
-  --secondary-400: 244 114 182;
-  --secondary-500: 236 72 153;
-  --secondary-600: 219 39 119;
-  --secondary-700: 190 24 93;
-  --secondary-800: 157 23 77;
-  --secondary-900: 131 24 67;
-  --secondary-950: 80 7 36;
-}
-.secondary-rose {
-  --secondary-50: 255 241 242;
-  --secondary-100: 255 228 230;
-  --secondary-200: 254 205 211;
-  --secondary-300: 253 164 175;
-  --secondary-400: 251 113 133;
-  --secondary-500: 244 63 94;
-  --secondary-600: 225 29 72;
-  --secondary-700: 190 18 60;
-  --secondary-800: 159 18 57;
-  --secondary-900: 136 19 55;
-  --secondary-950: 76 5 25;
 }

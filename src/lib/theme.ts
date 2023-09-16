@@ -1,12 +1,12 @@
-import { colors } from "./GeneratedColors";
+import { colors } from "./generatedColors";
 
 export const defaultTheme: Theme = {
   name: "Default",
   colors: {
     foreground: colors.foreground.white,
     background: colors.background.zinc["900"],
-    primary: colors.primary.violet,
-    secondary: colors.secondary.purple,
+    primary: colors.primary.violet["800"],
+    secondary: colors.secondary.purple["700"],
     text: colors.text.white,
   },
 };

@@ -14,8 +14,7 @@ const blacklist = [
   "transparent",
 ];
 
-const colors = ["primary", "secondary"];
-const colorsOne = ["background", "foreground", "text"];
+const colorsOne = ["primary", "secondary", "background", "foreground", "text"];
 
 /** @type function(string) => string */
 const hexToRgb = (value) => {
@@ -83,34 +82,7 @@ colorsOne.forEach((name) => {
   svelte += `  },\n`;
 });
 
-colors.forEach((name) => {
-  svelte += `  ${name}: {\n`;
-  for (const colorName in Colors) {
-    if (blacklist.find((elm) => elm === colorName)) {
-      continue;
-    }
-
-    let colorVariants = Colors[colorName];
-
-    if (typeof colorVariants === "object") {
-      css += `.${name}-${colorName} {\n`;
-      svelte += `    ${colorName}: "${name}-${colorName}",\n`;
-
-      for (const variant in colorVariants) {
-        let value = colorVariants[variant];
-        let rgb = hexToRgb(value);
-
-        css += `  --${name}-${variant}: ${rgb};\n`;
-      }
-
-      css += "}\n";
-    }
-  }
-
-  svelte += "  },\n";
-});
-
 svelte += "};\n";
 
 fs.writeFileSync("./src/styles/generatedColors.css", css);
-fs.writeFileSync("./src/lib/GeneratedColors.ts", svelte);
+fs.writeFileSync("./src/lib/generatedColors.ts", svelte);
