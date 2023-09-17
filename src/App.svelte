@@ -1,18 +1,15 @@
 <script lang="ts">
   import Settings from "./views/Settings.svelte";
   import Stashes from "./views/Stashes.svelte";
-
-  import { applyTheme, defaultTheme } from "./lib/theme";
-  import { writable } from "svelte/store";
-  import { defaultSettings } from "./lib/settings";
-  import { setContext } from "svelte";
   import Home from "./views/Home.svelte";
+  import { loadSettings, setSettingsContext } from "./lib/settings.js";
+  import { onMount } from "svelte";
 
-  let settings = writable(defaultSettings);
+  setSettingsContext();
 
-  setContext("Settings", settings);
-
-  applyTheme(defaultTheme);
+  onMount(async () => {
+    await loadSettings();
+  });
 
   const options = [
     {

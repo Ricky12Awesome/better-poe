@@ -1,21 +1,25 @@
 <script lang="ts">
-  import { getContext } from "svelte";
-  import type { Writable } from "svelte/store";
-  import { applyTheme } from "../../lib/theme";
-  import { type Settings, themes } from "../../lib/settings";
   import { writable } from "svelte/store";
+  import { applyTheme } from "../../lib/theme";
+  import { getSettings, themes } from "../../lib/settings";
 
-  let settings: Writable<Settings> = getContext("Settings");
+  let settings = getSettings();
   let themeIndex = writable(0);
 
   settings.update((settings) => {
-    themeIndex = writable(settings.theme);
+    let index = themes.findIndex((theme) => theme.name === settings.theme);
+
+    if (index == -1) {
+      index = 0;
+    }
+
+    themeIndex = writable(index);
     return settings;
   });
 
   themeIndex.subscribe((themeIndex) => {
     settings.update((settings) => {
-      settings.theme = themeIndex;
+      settings.theme = themes[themeIndex].name;
       return settings;
     });
 

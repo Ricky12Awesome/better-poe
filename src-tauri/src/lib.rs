@@ -1,4 +1,4 @@
 pub mod auth;
-pub mod config;
 pub mod error;
 pub mod parser;
+pub mod types;

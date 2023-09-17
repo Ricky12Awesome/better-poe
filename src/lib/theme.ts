@@ -1,4 +1,4 @@
-import { colors } from "./generatedColors";
+import { colors } from "./gen/colors";
 
 export const defaultTheme: Theme = {
   name: "Dark",
@@ -22,7 +22,7 @@ export const applyTheme = (theme: Theme) => {
   document.documentElement.className = themeToCssString(theme);
 };
 
-export type Theme = {
+export interface Theme {
   name: string;
   colors: {
     foreground: string;
@@ -32,4 +32,4 @@ export type Theme = {
     text: string;
     text2: string;
   };
-};
+}

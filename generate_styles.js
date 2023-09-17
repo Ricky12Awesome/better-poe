@@ -92,4 +92,4 @@ colorsOne.forEach((name) => {
 svelte += "};\n";
 
 fs.writeFileSync("./src/styles/generatedColors.css", css);
-fs.writeFileSync("./src/lib/generatedColors.ts", svelte);
+fs.writeFileSync("./src/lib/gen/colors.ts", svelte);
