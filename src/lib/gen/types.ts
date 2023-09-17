@@ -4,7 +4,8 @@
 
 export interface Token {
 	access_token: string;
-	expires_in: number;
+	created: string;
+	expires: string;
 }
 
 export interface State {
@@ -14,6 +15,5 @@ export interface State {
 export interface Settings {
 	log_file?: string;
 	theme?: string;
-	token?: Token;
 }
 

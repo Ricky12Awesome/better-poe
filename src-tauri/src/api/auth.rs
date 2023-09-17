@@ -1,40 +1,23 @@
+pub use std::borrow::Cow;
 use std::thread::sleep;
 use std::time::{Duration, Instant};
 
-use oauth2::basic::{BasicClient, BasicTokenResponse};
-use oauth2::{
-  AuthUrl, AuthorizationCode, ClientId, CsrfToken, PkceCodeChallenge, RedirectUrl, Scope, TokenUrl,
+pub use chrono::Local;
+pub use oauth2::basic::{BasicClient, BasicTokenResponse};
+pub use oauth2::{
+  AuthUrl, AuthorizationCode, ClientId, CsrfToken, PkceCodeChallenge, RedirectUrl, Scope,
+  TokenResponse, TokenUrl,
 };
-use reqwest::Url;
+pub use reqwest::Url;
+pub use serde::{Deserialize, Serialize};
+pub use tauri::Manager;
+pub use typeshare::typeshare;
 
-use crate::error::{Error, Result};
-
-pub const CONTACT_EMAIL: &str = "betterpoe@skiff.com";
-pub const CLIENT_ID: &str = "betterpoe";
-pub const VERSION: &str = env!("CARGO_PKG_VERSION");
-pub const GRANT_TYPE: &str = "authorization_code";
-pub const API_URL: &str = "https://api.pathofexile.com";
-pub const POE_URL: &str = "https://www.pathofexile.com";
-pub const AUTH_URL: &str = const_format::concatcp!(POE_URL, "/oauth/authorize");
-pub const TOKEN_URL: &str = const_format::concatcp!(POE_URL, "/oauth/token");
-pub const AUTO_CLOSE_HTML: &str = include_str!("auto_close.html");
-pub const REDIRECT_URL: &str = "http://localhost:8088";
-pub const PROFILE_SCOPE: &str = "account:profile";
-pub const LEAGUES_SCOPE: &str = "account:leagues";
-pub const STASHES_SCOPE: &str = "account:stashes";
-pub const CHARACTERS_SCOPE: &str = "account:characters";
-
-//OAuth {$clientId}/{$version} (contact: {$contact}) ...
-pub const USER_AGENT: &str = const_format::concatcp!(
-  "OAuth ",
-  CLIENT_ID,
-  "/",
-  VERSION,
-  " ",
-  "(contact: ",
-  CONTACT_EMAIL,
-  ")"
-);
+pub use crate::error::{Error, Result};
+pub use crate::{
+  AUTH_URL, AUTO_CLOSE_HTML, CHARACTERS_SCOPE, CLIENT_ID, LEAGUES_SCOPE, PROFILE_SCOPE,
+  REDIRECT_URL, STASHES_SCOPE, TOKEN_URL,
+};
 
 pub fn get_authorization_code(state: CsrfToken) -> Result<String> {
   let server = tiny_http::Server::http("127.0.0.1:8088").unwrap();
@@ -93,7 +76,7 @@ pub fn get_authorization_code(state: CsrfToken) -> Result<String> {
 pub fn get_token<F, E>(callback: F) -> Result<BasicTokenResponse>
 where
   F: FnOnce(Url) -> Result<(), E>,
-  E: Into<Error>
+  E: Into<Error>,
 {
   let client = BasicClient::new(
     ClientId::new(CLIENT_ID.to_string()),
@@ -125,4 +108,29 @@ where
     .set_pkce_verifier(pkce_verifier)
     .request(oauth2::reqwest::http_client)
     .map_err(|_| Error::FailedToGetAuthorizationCode)
+}
+
+pub mod command {
+  use crate::storage::token::Token;
+
+  use super::get_token as _get_token;
+  use super::*;
+
+  #[tauri::command]
+  pub fn get_token<'a>(app_handle: tauri::AppHandle) -> Result<Token<'a>> {
+    let open_url = |url: Url| app_handle.shell_scope().open(url.as_ref(), None);
+    let token = _get_token(open_url)?;
+    let access_token = token.access_token().secret().clone().into();
+    let created = Local::now().naive_local();
+    let mut expires = created;
+
+    expires += token.expires_in().unwrap_or_default();
+    expires -= Duration::from_secs(60 * 60);
+
+    Ok(Token {
+      access_token,
+      created,
+      expires,
+    })
+  }
 }
