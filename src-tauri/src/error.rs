@@ -1,7 +1,7 @@
 use serde::{Serialize, Serializer};
 use thiserror::Error;
 
-pub type Result<T> = std::result::Result<T, Error>;
+pub type Result<T, E = Error> = std::result::Result<T, E>;
 
 #[derive(Debug, Error)]
 pub enum Error {
@@ -11,6 +11,8 @@ pub enum Error {
   Infallible(#[from] std::convert::Infallible),
   #[error(transparent)]
   ParseError(#[from] oauth2::url::ParseError),
+  #[error(transparent)]
+  ShellScopeError(#[from] tauri::ShellScopeError),
   #[error(transparent)]
   SerdeJson(#[from] serde_json::Error),
   #[error("Failed to get authorization code")]

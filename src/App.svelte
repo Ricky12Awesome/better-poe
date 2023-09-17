@@ -2,9 +2,8 @@
   import Settings from "./views/Settings.svelte";
   import Stashes from "./views/Stashes.svelte";
   import Home from "./views/Home.svelte";
-  import { loadSettings, setSettingsContext } from "./lib/settings.js";
-  import { onMount } from "svelte";
-  import { state, loadState, setStateContext } from "./lib/state";
+  import { setSettingsContext } from "./lib/settings.js";
+  import { setStateContext, state } from "./lib/state";
 
   const views = [
     {
@@ -21,14 +20,7 @@
     },
   ];
 
-  let id = 0;
-
-  onMount(async () => {
-    await loadState();
-    await loadSettings();
-
-    id = $state?.last_page ?? 0;
-  });
+  let id = $state?.last_page ?? 0;
 
   setStateContext();
   setSettingsContext();
@@ -36,10 +28,7 @@
   function select(event: any) {
     id = Number.parseInt(event.target.id);
 
-    state.update((state) => {
-      if (state) state.last_page = id;
-      return state;
-    });
+    if ($state) $state.last_page = id;
   }
 </script>
 
@@ -52,7 +41,7 @@
             <button
               id={i.toString()}
               on:click={select}
-              class="text-text2 bg-primary px-8 py-3 text-center text-3xl hover:bg-primary"
+              class="text-text2 bg-primary px-8 py-3 text-center text-3xl"
             >
               {option.name}
             </button>
@@ -60,7 +49,7 @@
             <button
               id={i.toString()}
               on:click={select}
-              class="hover:text-text2 px-8 py-3 text-center text-3xl text-text hover:bg-primary"
+              class="hover:text-text2 px-8 py-3 text-center text-3xl text-text hover:bg-secondary"
             >
               {option.name}
             </button>

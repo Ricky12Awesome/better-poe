@@ -4,7 +4,7 @@ use std::path::PathBuf;
 use typeshare::typeshare;
 
 #[typeshare]
-#[derive(Debug, Default, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct Token<'a> {
   #[typeshare(serialized_as = "string")]
   pub access_token: Cow<'a, str>,
@@ -12,13 +12,13 @@ pub struct Token<'a> {
   pub expires_in: u64,
 }
 #[typeshare]
-#[derive(Debug, Default, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct State {
   pub last_page: i32,
 }
 
 #[typeshare]
-#[derive(Debug, Default, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct Settings<'a> {
   #[typeshare(serialized_as = "Option<string>")]
   pub log_file: Option<PathBuf>,

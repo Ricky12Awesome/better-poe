@@ -47,7 +47,7 @@
               id={i.toString()}
               on:click={(event) =>
                 (selected = Number.parseInt(event.currentTarget.id))}
-              class="text-text2 flex min-w-max flex-grow bg-primary px-7 py-2 text-3xl hover:bg-primary"
+              class="text-text2 flex min-w-max flex-grow bg-primary px-7 py-2 text-3xl"
             >
               {name}
             </button>
@@ -56,7 +56,7 @@
               id={i.toString()}
               on:click={(event) =>
                 (selected = Number.parseInt(event.currentTarget.id))}
-              class="hover:text-text2 flex min-w-max flex-grow px-7 py-2 text-3xl text-text hover:bg-primary"
+              class="hover:text-text2 flex min-w-max flex-grow px-7 py-2 text-3xl text-text hover:bg-secondary"
             >
               {name}
             </button>

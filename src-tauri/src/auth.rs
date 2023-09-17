@@ -90,7 +90,11 @@ pub fn get_authorization_code(state: CsrfToken) -> Result<String> {
   })
 }
 
-pub fn get_token(callback: impl FnOnce(Url)) -> Result<BasicTokenResponse> {
+pub fn get_token<F, E>(callback: F) -> Result<BasicTokenResponse>
+where
+  F: FnOnce(Url) -> Result<(), E>,
+  E: Into<Error>
+{
   let client = BasicClient::new(
     ClientId::new(CLIENT_ID.to_string()),
     None,
@@ -112,7 +116,7 @@ pub fn get_token(callback: impl FnOnce(Url)) -> Result<BasicTokenResponse> {
     .set_pkce_challenge(pkce_challenge)
     .url();
 
-  callback(auth_url);
+  callback(auth_url).map_err(Into::into)?;
 
   let authorization_code = get_authorization_code(csrf_token)?;
 
