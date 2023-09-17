@@ -12,6 +12,32 @@ export const defaultTheme: Theme = {
   },
 };
 
+export const themes: Theme[] = [
+  defaultTheme,
+  {
+    name: "Light",
+    colors: {
+      foreground: colors.foreground.black,
+      background: colors.background.zinc["50"],
+      primary: colors.primary.violet["600"],
+      secondary: colors.secondary.purple["400"],
+      text: colors.text.black,
+      text2: colors.text2.white,
+    },
+  },
+  {
+    name: "Red",
+    colors: {
+      foreground: colors.foreground.black,
+      background: colors.background.zinc["50"],
+      primary: colors.primary.red["600"],
+      secondary: colors.secondary.red["400"],
+      text: colors.text.black,
+      text2: colors.text2.white,
+    },
+  },
+];
+
 export const themeToCssString = (theme: Theme) => {
   let c = theme.colors;
 

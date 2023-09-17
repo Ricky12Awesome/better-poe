@@ -7,6 +7,10 @@ export interface Token {
 	expires_in: number;
 }
 
+export interface State {
+	last_page: number;
+}
+
 export interface Settings {
 	log_file?: string;
 	theme?: string;

@@ -1,9 +1,9 @@
 <script lang="ts">
   import { writable } from "svelte/store";
-  import { applyTheme } from "../../lib/theme";
-  import { getSettings, themes } from "../../lib/settings";
+  import { applyTheme, themes } from "../../lib/theme";
+  import { getSettingsContext } from "../../lib/settings";
 
-  let settings = getSettings();
+  let settings = getSettingsContext();
   let themeIndex = writable(0);
 
   settings.update((settings) => {

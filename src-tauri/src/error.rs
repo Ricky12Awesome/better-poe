@@ -11,6 +11,8 @@ pub enum Error {
   Infallible(#[from] std::convert::Infallible),
   #[error(transparent)]
   ParseError(#[from] oauth2::url::ParseError),
+  #[error(transparent)]
+  SerdeJson(#[from] serde_json::Error),
   #[error("Failed to get authorization code")]
   FailedToGetAuthorizationCode,
   #[error(transparent)]

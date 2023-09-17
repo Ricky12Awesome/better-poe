@@ -1,5 +1,4 @@
-import { applyTheme, defaultTheme, type Theme } from "./theme";
-import { colors } from "./gen/colors";
+import { applyTheme, defaultTheme, themes } from "./theme";
 
 import { type Settings } from "./gen/types";
 import { type Writable, writable } from "svelte/store";
@@ -10,33 +9,7 @@ export const settings: Writable<Settings | undefined> = writable(undefined);
 
 export const SETTINGS_CONTEXT_KEY = "Settings";
 
-export const themes: Theme[] = [
-  defaultTheme,
-  {
-    name: "Light",
-    colors: {
-      foreground: colors.foreground.black,
-      background: colors.background.zinc["50"],
-      primary: colors.primary.violet["600"],
-      secondary: colors.secondary.purple["400"],
-      text: colors.text.black,
-      text2: colors.text2.white,
-    },
-  },
-  {
-    name: "Red",
-    colors: {
-      foreground: colors.foreground.black,
-      background: colors.background.zinc["50"],
-      primary: colors.primary.red["600"],
-      secondary: colors.secondary.red["400"],
-      text: colors.text.black,
-      text2: colors.text2.white,
-    },
-  },
-];
-
-export const getSettings = (): Writable<Settings> => {
+export const getSettingsContext = (): Writable<Settings> => {
   return getContext(SETTINGS_CONTEXT_KEY);
 };
 
@@ -56,8 +29,6 @@ export const loadSettings = async () => {
   applyTheme(
     themes.find((theme) => theme.name === loadedSettings.theme) ?? defaultTheme,
   );
-
-  return settings;
 };
 
 export { type Settings };

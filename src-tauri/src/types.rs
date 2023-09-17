@@ -11,6 +11,11 @@ pub struct Token<'a> {
   #[typeshare(serialized_as = "number")]
   pub expires_in: u64,
 }
+#[typeshare]
+#[derive(Debug, Default, Serialize, Deserialize)]
+pub struct State {
+  pub last_page: i32,
+}
 
 #[typeshare]
 #[derive(Debug, Default, Serialize, Deserialize)]

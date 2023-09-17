@@ -4,14 +4,9 @@
   import Home from "./views/Home.svelte";
   import { loadSettings, setSettingsContext } from "./lib/settings.js";
   import { onMount } from "svelte";
+  import { state, loadState, setStateContext } from "./lib/state";
 
-  setSettingsContext();
-
-  onMount(async () => {
-    await loadSettings();
-  });
-
-  const options = [
+  const views = [
     {
       name: "Home",
       component: Home,
@@ -26,21 +21,34 @@
     },
   ];
 
-  let selectedView = options[0];
-  let selectedViewId = 0;
+  let id = 0;
+
+  onMount(async () => {
+    await loadState();
+    await loadSettings();
+
+    id = $state?.last_page ?? 0;
+  });
+
+  setStateContext();
+  setSettingsContext();
 
   function select(event: any) {
-    selectedView = options[event.target.id];
-    selectedViewId = Number.parseInt(event.target.id);
+    id = Number.parseInt(event.target.id);
+
+    state.update((state) => {
+      if (state) state.last_page = id;
+      return state;
+    });
   }
 </script>
 
 <main>
   <div class="flex flex-grow">
     <ul class="flex flex-grow">
-      {#each options as option, i}
+      {#each views as option, i}
         <li>
-          {#if selectedViewId === i}
+          {#if id === i}
             <button
               id={i.toString()}
               on:click={select}
@@ -63,7 +71,7 @@
   </div>
 
   <div class="bg-primary py-0.5"></div>
-  <svelte:component this={selectedView.component} />
+  <svelte:component this={views[id].component} />
 </main>
 
 <style>
