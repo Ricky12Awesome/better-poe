@@ -1,27 +1,18 @@
 <script lang="ts">
   import { writable } from "svelte/store";
   import { applyTheme, themes } from "../../lib/theme";
-  import { getSettingsContext } from "../../lib/settings";
+  import { settings } from "../../lib/storage";
 
-  let settings = getSettingsContext();
-  let themeIndex = writable(0);
+  let index = themes.findIndex((theme) => theme.name === $settings.theme);
 
-  settings.update((settings) => {
-    let index = themes.findIndex((theme) => theme.name === settings.theme);
+  if (index == -1) {
+    index = 0;
+  }
 
-    if (index == -1) {
-      index = 0;
-    }
-
-    themeIndex = writable(index);
-    return settings;
-  });
+  let themeIndex = writable(index);
 
   themeIndex.subscribe((themeIndex) => {
-    settings.update((settings) => {
-      settings.theme = themes[themeIndex].name;
-      return settings;
-    });
+    $settings.theme = themes[themeIndex].name;
 
     applyTheme(themes[themeIndex]);
   });
@@ -32,7 +23,7 @@
     id={i.toString()}
     on:click={(event) =>
       themeIndex.set(Number.parseInt(event.currentTarget.id))}
-    class="hover:text-text2 px-3 py-1 text-3xl text-text hover:bg-primary"
+    class="px-3 py-1 text-3xl text-text hover:bg-primary hover:text-text2"
   >
     {theme.name}
   </button>

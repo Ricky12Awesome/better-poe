@@ -117,20 +117,28 @@ pub mod command {
   use super::*;
 
   #[tauri::command]
-  pub fn get_token<'a>(app_handle: tauri::AppHandle) -> Result<Token<'a>> {
-    let open_url = |url: Url| app_handle.shell_scope().open(url.as_ref(), None);
-    let token = _get_token(open_url)?;
-    let access_token = token.access_token().secret().clone().into();
-    let created = Local::now().naive_local();
-    let mut expires = created;
+  pub async fn get_token(app_handle: tauri::AppHandle) -> Result<()> {
+    tauri::async_runtime::spawn_blocking(move || {
+      let open_url = |url: Url| app_handle.shell_scope().open(url.as_ref(), None);
+      let token = _get_token(open_url)?;
+      let access_token = token.access_token().secret().clone().into();
+      let created = Local::now().naive_local();
+      let mut expires = created;
 
-    expires += token.expires_in().unwrap_or_default();
-    expires -= Duration::from_secs(60 * 60);
+      expires += token.expires_in().unwrap_or_default();
+      expires -= Duration::from_secs(60 * 60);
 
-    Ok(Token {
-      access_token,
-      created,
-      expires,
+      let token = Token {
+        access_token,
+        created,
+        expires,
+      };
+
+      app_handle
+        .emit_all("get_token_result", token)
+        .map_err(Error::from)
     })
+    .await
+    .unwrap()
   }
 }

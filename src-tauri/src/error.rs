@@ -14,7 +14,13 @@ pub enum Error {
   #[error(transparent)]
   ShellScopeError(#[from] tauri::ShellScopeError),
   #[error(transparent)]
+  TauriError(#[from] tauri::Error),
+  #[error(transparent)]
   SerdeJson(#[from] serde_json::Error),
+  #[error(transparent)]
+  ValidationError(#[from] validator::ValidationError),
+  #[error(transparent)]
+  ValidationErrors(#[from] validator::ValidationErrors),
   #[error("Failed to get authorization code")]
   FailedToGetAuthorizationCode,
   #[error(transparent)]

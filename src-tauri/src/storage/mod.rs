@@ -8,23 +8,37 @@ pub mod token;
 
 #[macro_export]
 macro_rules! load_file_command {
-  (no_app_name: $lf:ident$(<$l:lifetime>)?, $sf:ident, $tn:ident: $t:ty, $dir:expr, $name:expr) => {
+  (
+    no_app_name: $lf:ident$(<$l:lifetime>)?, $sf:ident, $tn:ident: $t:ty, $dir:expr, $name:expr
+    $(,$($ff:ident($map:expr)).+)?
+  ) => {
     #[tauri::command]
-    pub fn $lf$(<$l>)?() -> $t {
-      $crate::storage::load_file($dir, $name).unwrap_or_default()
+    pub fn $lf$(<$l>)?() -> $crate::error::Result<$t> {
+      $crate::storage::load_file($dir, $name)$($(.$ff($map))+)?
     }
 
     #[tauri::command]
-    pub fn $sf$(<$l>)?($tn: $t) {
-      let _ = $crate::storage::save_file(
+    pub fn $sf$(<$l>)?($tn: $t) -> $crate::error::Result<()> {
+      $crate::storage::save_file(
         $dir,
         $name,
         $tn,
-      );
+      )
     }
   };
-  ($lf:ident$(<$l:lifetime>)?, $sf:ident, $tn:ident: $t:ty, $dir:expr, $name:expr) => {
-    load_file_command!(no_app_name: $lf$(<$l>)?, $sf, $tn: $t, ($dir).map(|dir| dir.join($crate::NAME)), $name);
+  (
+    $lf:ident$(<$l:lifetime>)?, $sf:ident, $tn:ident: $t:ty, $dir:expr, $name:expr
+    $(,$($ff:ident($map:expr)).+)?
+  ) => {
+    load_file_command!(
+      no_app_name:
+      $lf$(<$l>)?,
+      $sf,
+      $tn: $t,
+      ($dir).map(|dir| dir.join($crate::NAME)),
+      $name
+      $(,$($ff($map)).+)?
+    );
   }
 }
 

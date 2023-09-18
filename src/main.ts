@@ -1,10 +1,10 @@
 import "./styles.css";
 import App from "./App.svelte";
-import { loadSettings } from "./lib/settings";
-import { loadState } from "./lib/state";
+import { loadSettings, loadState, loadToken } from "./lib/storage";
 
 await loadState();
 await loadSettings();
+await loadToken();
 
 const app = new App({
   target: document.getElementById("app"),

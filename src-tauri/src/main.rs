@@ -24,7 +24,7 @@ fn file_watcher(app_handle: tauri::AppHandle, path: &str) -> Result<()> {
   Ok(())
 }
 
-fn main() {
+fn main() {  
   tauri::Builder::default()
     .manage(Watcher::default())
     .invoke_handler(tauri::generate_handler![

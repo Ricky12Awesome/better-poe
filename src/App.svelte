@@ -2,8 +2,7 @@
   import Settings from "./views/Settings.svelte";
   import Stashes from "./views/Stashes.svelte";
   import Home from "./views/Home.svelte";
-  import { setSettingsContext } from "./lib/settings.js";
-  import { setStateContext, state } from "./lib/state";
+  import { state } from "./lib/storage";
 
   const views = [
     {
@@ -22,9 +21,6 @@
 
   let id = $state?.last_page ?? 0;
 
-  setStateContext();
-  setSettingsContext();
-
   function select(event: any) {
     id = Number.parseInt(event.target.id);
 
@@ -41,7 +37,7 @@
             <button
               id={i.toString()}
               on:click={select}
-              class="text-text2 bg-primary px-8 py-3 text-center text-3xl"
+              class="bg-primary px-8 py-3 text-center text-3xl text-text2"
             >
               {option.name}
             </button>
@@ -49,7 +45,7 @@
             <button
               id={i.toString()}
               on:click={select}
-              class="hover:text-text2 px-8 py-3 text-center text-3xl text-text hover:bg-secondary"
+              class="px-8 py-3 text-center text-3xl text-text hover:bg-secondary hover:text-text2"
             >
               {option.name}
             </button>
